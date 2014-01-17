@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site">
+   <name>Lage</name>
+   <author>Victor Gil</author>
+   <version>1.0.1</version>
+   <description>Lage-Modul</description>
+    
+   <files>
+      <filename module="mod_lage">mod_lage.php</filename>
+   </files>
+</extension>

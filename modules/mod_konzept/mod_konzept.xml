@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site">
+   <name>Konzept</name>
+   <author>victor Gil</author>
+   <version>1.0.1</version>
+   <description>Konzept-Modul</description>
+    
+   <files>
+      <filename module="mod_konzept">mod_konzept.php</filename>
+   </files>
+</extension>

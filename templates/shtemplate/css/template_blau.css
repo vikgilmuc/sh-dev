@@ -1,0 +1,65 @@
+body
+{
+        font-family: Helvetica,Arial,sans-serif;
+		color:black;
+}
+.container{
+	padding: 0px; margin : 0px
+}
+
+@font-face{
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+   /**  url('font/gillsansmtpro-ultrabold-webfont.eot') format('eot'),
+          url('font/gillsansmtpro-ultrabold-webfont.woff') format('woff'),
+          url('font/gillsansmtpro-ultrabold-webfont.ttf') format('truetype'),
+          url('font/gillsansmtpro-ultrabold-webfont.svg#abcd') format('svg');
+    font-weight: normal;
+   font-style: normal; **/
+}
+
+.logo img {width:150px}
+
+#sticky_navigation_wrapper {}
+
+#home ul {position:relative;top:300px}
+
+.nav {font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+font-size: 3vw}
+
+.nav li {float:left}
+
+.fusszeile
+{
+      clear: both;
+      text-align: center;
+      font-size: small;
+      font-style: italic;
+      color: gray;
+}
+
+
+#maincontent img{width: 100%}
+.item-image {width:100%}
+.suche
+{
+	float: left;
+}
+
+#nav .current a {
+	background: #666;
+	color: #ededed;
+}
+#sticky_navigation {width:100%}
+
+#konzept {min-height:500px;
+font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+font-size: 3vw}
+@media only screen and (max-device-width: 767px) { 
+	.logo img {width:75px}
+	
+	 }
+	 
+	 @media only screen and (min-width: 767px) { 
+	.container {width:100%}
+	
+	 }

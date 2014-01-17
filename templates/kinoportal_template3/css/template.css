@@ -1,0 +1,58 @@
+body
+{
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.fusszeile
+{
+	clear: both;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    color: gray;
+}
+
+.suche
+{
+	float: right;
+}
+
+.inhalte
+{
+    border-top: 2px solid gray;
+    padding-top: 1em;
+}
+
+.links
+{
+    float: left; 
+    width: 20%;
+    background-color:#eeeeee;
+}
+
+.hauptbereich
+{
+    float: left; 
+    width: 58%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.rechts
+{
+    float: left; 
+    width: 20%;
+    background-color:#eeeeee;
+}
+
+.menu a
+{
+      color: red;
+}
+
+.menu a:hover
+{
+      color: black;
+      background: red;
+      font-size: 12pt;
+}

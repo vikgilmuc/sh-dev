@@ -1,0 +1,54 @@
+body
+{
+        font-family: Helvetica,Arial,sans-serif;
+		
+		background-image:url(../images/background.jpg);
+		background-position: 50% 0px;
+		background-repeat:no-repeat center center fixed;
+		-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+@font-face{
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+   /**  url('font/gillsansmtpro-ultrabold-webfont.eot') format('eot'),
+          url('font/gillsansmtpro-ultrabold-webfont.woff') format('woff'),
+          url('font/gillsansmtpro-ultrabold-webfont.ttf') format('truetype'),
+          url('font/gillsansmtpro-ultrabold-webfont.svg#abcd') format('svg');
+    font-weight: normal;
+   font-style: normal; **/
+}
+
+.logo {height:230px}
+.logo img {display: block; width:200px;  position: relative; left: 43%; top: 30px}
+
+h1 {font-family: Copperplate, "Copperplate Gothic Bold", fantasy;
+font-size: 3vw; color: black; text-align: center; }
+h2  {font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+font-size: 3vw; color: black; text-align: center; margin-bottom: 50px}
+h3 {font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+font-size: 2vw; color: black;text-align: left}
+
+p{font-family: Lucida Sans Unicode;
+font-size: 1.5vw; color: black; text-align: left;margin-bottom: 50px
+}
+
+.fusszeile
+{
+      clear: both;
+      text-align: center;
+      font-size: small;
+      font-style: italic;
+      color: gray;
+      height: 150px;
+}
+
+.caret {color:black}
+.item-page li {list-style-image: url(../images/smiley-homes-list.png)}
+.suche
+{
+	clean: both; color: black;
+}

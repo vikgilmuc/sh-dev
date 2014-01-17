@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site">
+	<name>Smileyhomes</name>
+	<author>Victor Gil</author>
+	<version>1.0</version>
+	<description>Das Smileyhomes-Modul</description>
+	
+	<files>
+		<filename module="mod_smileyhomes">mod_smileyhomes.php</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="anzahl"
+					type="integer"
+					first="1"
+					last="10"
+					step="1"
+					default="5"
+					label="Anzahl Wohnungen :"
+					description="Geben Sie hier die Anzahl der gleichzeitig anzuzeigenden Wohnungen ein." />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

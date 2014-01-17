@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - Mega Menu</name>
+	<author>Neo</author>
+	<creationDate>7/1/2012</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 JoomAvatar.com</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>beautifultemplates@gmail.com</authorEmail>
+	<authorUrl>www.beautiful-templates.com</authorUrl>
+	<version>1.0.0</version>
+	<edition>Pro</edition>
+	<description>ST Mega Menu - make joomla easier</description>
+	<files>
+		<filename plugin="st_megamenu">st_megamenu.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_st_megamenu.ini</language>
+		<language tag="en-GB">en-GB.plg_system_st_megamenu.sys.ini</language>
+	</languages>
+</extension>

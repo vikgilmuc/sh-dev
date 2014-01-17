@@ -1,0 +1,508 @@
+
+@font-face{
+    font-family : "Gill Sans Font Family";
+    src : url('font/gillsansmtpro-ultrabold-webfont.eot') format('eot'),
+          url('font/gillsansmtpro-ultrabold-webfont.woff') format('woff'),
+          url('font/gillsansmtpro-ultrabold-webfont.ttf') format('truetype'),
+          url('font/gillsansmtpro-ultrabold-webfont.svg#abcd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/**
+ * local.css
+ * Use this file for customizations to your subtheme.
+ *
+ * There are no style definitions on this file. Add your styles and delete the unused ones.
+ *
+ */
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+html {
+height:100%;
+background: url('gletscher.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+body{height: 100%;
+width:100%;
+}	
+:focus {/* remember to define focus styles! */
+    outline: 0;
+}
+body {
+ 
+    color: #666;
+    line-height: 1.2;
+    font-family: "Gill Sans Font Family"
+    
+}
+ol, ul {
+    list-style: none;
+}
+table {/* tables still need 'cellspacing="0"' in the markup */
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q { quotes: "" ""; }
+a { color:#000; text-decoration:none; }
+a img {border: 0; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+p { font-size:14px; line-height:22px; }
+p strong { font-weight:normal; }
+em { font-style:italic; }
+
+
+
+html {height:100%}
+
+body {
+
+
+ 
+  font-family: "Gill Sans Font Family";
+  font-size: 62.5%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  min-width: 800px;
+height:100%;
+overflow:auto
+}
+	
+
+
+	
+#page {
+
+}
+h1, h2, h3, h4, h5, h6 {}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+h1.title {}
+
+p {}
+
+a, a:link{text-decoration: none}, a:visited {}
+a:hover   {background:#eee}
+a:focus, a:active, a.active {}
+
+/* Override common styling after reset.css and groundwork.css */
+ul, ol {}
+ul {}
+ol {}
+
+ol ol {}
+
+dl {}
+dl dt {}
+dd {}
+
+hr {}
+fieldset {}
+
+table {}
+th {}
+thead th      {}
+th,td,caption {}
+tbody tr:nth-child(even) td,
+tbody tr.even td  {}
+tr.odd {}
+tr.even {}
+tfoot       {}
+caption {}
+.sticky-header th, .sticky-table th {}
+
+img {}
+
+blockquote  {}
+strong,dfn  {}
+em,dfn      {}
+sup, sub    {}
+
+abbr,
+acronym     {}
+address     {}
+del         {}
+
+pre         {}
+pre,code,tt {}
+
+
+
+/**
+ *  5. SECTOR, ZONES and CONTAINERS
+ */
+
+
+#page-wrapper { 
+	position: relative;
+	overflow: hidden
+	
+}
+  
+
+#page {}
+
+/* SECTORS - Sections that contain different zones and regions */
+
+
+
+#sector-header {
+margin:0;
+  padding:0;
+  display:block;
+  outline:0;
+  vertical-align:baseline;
+  width:100%;
+  height:120px;}
+#sector-content {
+
+
+position:relative;
+margin:0;
+  overflow: auto;
+  display:block;
+  outline:0;
+  vertical-align:baseline;
+  width:100%;
+  height: 100%;
+  min-height: 200px;}
+#sector-footer {margin-top:0px;
+	
+  padding:0px;
+  border-bottom: 10px;
+  display:block;
+  outline:0;
+  vertical-align:baseline;
+  width:100%;
+
+  z-index:6
+  }
+#sector-footer .container-24 {background-color: rgb(26,188,156);}
+  
+  /* ZONES - Sections that contain different zones and regions */
+  
+#home {background:rgba(100,100,100,0.5); width:100%; height:100%; position: relative ; }
+#home img{ max-height: 100% ; }
+#home h2{ font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 500%; color: white;font-weight: 900; text-shadow: 2px 2px #000000; position: absolute; top: 45%; left:10%; text-align: center}
+#home h3{ font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 200%; color: white;font-weight: 900; text-shadow: 2px 2px #000000; position: absolute; top: 75%; left:45%;  text-align: left}
+#home:after {clear: both}
+.a100 {height: 100%; overflow: hidden} 
+#homeheader{ position: fixed; top:0px; height: 15%; background-color:rgba(130,130,130,0.5); width: 100%;  z-index: 6; display: block	}
+#homenavigator { position: absolute; top:100px; height: 100%; background-color:rgba(130,130,130,0.5);  z-index: 6; 	}
+.panel { width:100%; float:left; position:relative; overflow:hidden; }
+
+
+ul {display:inline-block;list-style-type: none; margin: -0hmin;}
+
+#homeheader li {position:relative;background-color:#EEEEEE; }
+
+ul ul{
+display:none;
+position:absolute;
+width:200px;
+margin:0;
+top:100%;
+}
+
+#mainmenu  ul ul{
+display:none;
+position:absolute;
+width:200px;
+margin:0;
+top:100%;
+
+}
+#homeheader li li {
+float:none;
+background-color:#CCCCCC;
+}
+#mainmenu {float: left}
+
+#mainmenu  ul ul{float: left}
+
+
+#homePanels {background-color:rgba(130,130,0,0.5)}
+.use-hove li:hover ul   {
+display:block;
+}
+#parallax-bg1 .panel { width:100%; float:left; position:relative; overflow:visible; }
+#parallax-bg1 .panel .info { width:100%; position:absolute; }
+#parallax-bg1 .panel .infoContent { width:100%; text-align:center; vertical-align:middle; display:table-cell; }
+
+#parallax-bg1 {display: none;
+	z-index: 3;
+	position: relative;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	height:100%;
+	width: 100%;
+	margin-left: -50%; 
+	overflow: hidden;/* move left by half element's width */
+	}
+/*#parallax-bg1 #home img:first-child {display: block}	*/
+#parallax-bg1 ul { position:absolute; bottom:30px; left:50%; } 
+#parallax-bg1 ul li { width:8px; height:8px; float:left; margin:0 3px; } 
+#parallax-bg1 ul a { width:8px; height:8px; display:block; color:#fff; background:url(img/slider.png) no-repeat 0 -32px; text-indent:-9999px; } 
+#parallax-bg1 ul a:hover, #parallax-bg1 ul a.current { background-position:-14px -32px; } 
+
+/* ZONES - Full Width - Outside the container */
+/* Tip: Add your backgrounds here for a full width background */
+.noceda-zone-wrapper {} /* target all zones */
+#topbar-zone {}
+#header-zone {background: lightblue;
+position: relative;}
+#header-nav-zone {background: rgba(26,188,156,0.5); text-align: center ; display: inline;
+position: absolute;
+right: 0px;
+top: 100px;
+width: 100%;
+height: 45px;
+z-index: 3;
+font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 24px; font-weight: 900; color: white;
+}
+#home-header a{color: white;}
+#header-nav-zone ul {display: inline-block}
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+#navbar-zone {
+	position: absolute;
+	
+	
+	padding: 0px;
+	background: rgb(130,130,130);
+    margin-left: 0px;
+    margin-right: 0px;
+	font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 20px; color: white;font-weight: 900;
+   }
+   
+ #navbar-zone a{  color: white;}
+   
+   
+#main-zone {
+max-width: 399px; 
+width: auto;
+padding: 5px;
+	display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+	margin-top: 0px;
+    position: relative;
+	left: 20%;
+	padding: 0px;}
+	
+	
+article {background: rgba(200,200,200,0.5);
+margin-bottom: 10px; margin-top: 0px; min-height: 350px; z-index:5}
+
+article h2{margin-top: 0px; margin-left: 140px;font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 20px;font-weight: 900; color: black;}
+article h3{margin-left: 140px; 	font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 12px; color: black;}
+article img{margin: 20px; float: left; }
+article p{font-family:Arial; background: rgb(113,113,113); font-size: 12px; color: white; margin-right: 10px; margin-left: 150px; }
+
+
+article.links h2{margin-top: 0px; margin-right: 140px;font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 20px;font-weight: 900; color: black; text-align: right}
+article.links h3{margin-right: 140px; 	font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 12px; color: black; text-align: right}
+article.links img{margin: 20px; float: right; max-width: 120px; height: auto;}
+article.links p{font-family:Arial; background: rgb(113,113,113); font-size: 12px; color: white; margin-right: 10px; margin-right: 150px; margin-left: 10px}
+
+article:last-child {margin-bottom: 0px}
+
+	
+	
+	aside img{border-color: rgb(130,130,130); 	
+border-width: 20px;
+border-style: solid;
+position:relative;max-width: 120px;
+	height: auto;}
+	
+	
+	
+#side-bar{ float: left; position: relative; left: 25% }
+
+aside {position:relative;}
+	
+}
+#appendix-zone {}
+#supplement-zone {}
+#footer-zone {
+
+  font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 14px;font-weight: 900; color: white;
+  text-indent: 20px}
+#footer-zone ul	{ }
+#footer-zone li	{float: left;}
+
+/* CONTAINER - the 960px container */
+/* Tip: Add your backgrounds here for backgrounds within the container */
+.container-24 {margin-left:auto;
+  margin-right:auto;
+  width:960px;
+  max-width: 90%;} /* target containers of all sections */
+  
+  
+/* Inner Divs and Regions */
+#header-inner  {}
+#main .columns {}
+
+.noceda-region {} /* target all regions */
+.region {} /* target all regions */
+
+#topbar {}
+#branding {width: 100%; 
+height: 100px; 
+position: absolute;
+left: 0px;
+top: 0px;
+background: rgba(133,133,133,0.5); z-index: 2}
+#header {z-index: 1;
+position:absolute;
+top:0px;
+right:0px;
+height: 145px;
+overflow: hidden;
+}
+#navbar-zone ul{display:block;list-style-type: none; margin: -0hmin;}
+#navbar-zone li{display:block;list-style-type: none; margin: -0hmin;color: white}
+
+
+#main-navigation {}
+#billboard {}
+#highlighted {}
+#main-content {position:relative; left: 20%; width:60%; float: left}
+#sidebar-first {}
+#sidebar-second {}
+
+#appendix {}
+#supplement {}
+#footer {}
+#attribution {}
+
+#main-content-inner {}
+
+
+img {
+	
+}
+
+aside p{font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 15px; color: white;font-weight: 900; float:left;
+
+position:absolute; bottom: 15px; right: -20px; z-index: 2; padding-right: 22px; padding-left: 22px
+}
+.aside-element{
+
+position:relative;
+}
+	.block {
+  text-align: center;
+  background: #c0c0c0;
+  border: #a0a0a0 solid 1px;
+  margin: 20px;
+ 
+}
+ 
+.logo-box:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: 10%; /* Adjusts for spacing 
+    
+
+  background: #808080; width: 5px;*/
+ 
+ }
+ 
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  
+  padding: 10px 15px;
+  border: #a0a0a0 solid 1px;
+  background: #f5f5f5;
+ }
+
+.box {height: 100%; width: 100%;  }
+
+/* Branding */
+.logo-box { height:100%;vertical-align: baseline; display: inline;}
+#logo-image {  height: 80%; display: inline; vertical-align: middle;}
+
+
+.fastmenu {font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 200%; color: white;font-weight: 900; margin-left: 2%; 
+}
+
+
+div#name-and-slogan {}
+
+h1#site-name {}
+
+h1#site-name a {}
+
+h2#site-slogan {}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+#logo-image {  height: 60%; display: inline; vertical-align: middle;}
+   #side-bar{display: none;position: fixed; left: 70%; width:17%; } 
+  
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    #page-wrapper { width:1020px;height:800px }
+#side-bar{display: none;position: fixed; left: 70%; width:17%; }
+}width : 1024px) {
+
+    #page-wrapper { width:1020px; }
+

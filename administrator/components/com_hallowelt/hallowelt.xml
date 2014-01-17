@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0">
+
+	<name>Hallowelt</name>
+	<creationDate>24. Januar 2013</creationDate>
+	<author>Tim Schürmann</author>
+	<authorEmail>info@tim-schuermann.de</authorEmail>
+	<authorUrl>http://www.tim-schuermann.de</authorUrl>
+	<copyright>(C) Tim Schürmann 2013</copyright>
+	<license>GNU General Public License</license>
+	<version>1.0.0</version> <!--  Versionsnummer der Komponente -->
+	<description>Dies ist eine Beschreibung der Komponente ...</description>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>hallowelt.php</filename>
+		<filename>controller.php</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<administration>
+		<menu>Hallo Welt!</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>hallowelt.php</filename>
+		</files>
+	</administration>
+	
+</extension>

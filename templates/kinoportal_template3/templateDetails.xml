@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="3.0" type="template" client="site">
+
+   <!-- Ein paar allgemeine Informationen über das Template: -->
+   <name>kinoportal_template3</name>
+   <creationDate>12.01.2013</creationDate>
+   <author>Tim Schürmann</author>
+   <authorEmail>info@tim-schuermann.de</authorEmail>
+   <authorUrl>http://www.tim-schuermann.de</authorUrl>
+   <copyright>Copyright (C) 2013 Tim Schürmann, alle Rechte vorbehalten.</copyright>
+   <license>GNU GPL</license>
+   <version>0.1</version>
+   <description>Hier steht eine Beschreibung des Templates</description>
+
+   <!-- Alle Dateien und Verzeichnisse des Templates: -->
+   <files>
+	<folder>css</folder>
+    <folder>images</folder>
+    <filename>index.php</filename>
+    <filename>templateDetails.xml</filename>
+   </files>
+
+   <!-- Die Positionen, die das Template anbietet: -->
+   <positions>
+      <position>position-0</position>
+      <position>position-2</position>
+      <position>position-7</position>
+      <position>position-8</position>
+   </positions>
+</extension>

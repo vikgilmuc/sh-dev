@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site">
+   <name>Slider</name>
+   <author>Victor Gil</author>
+   <version>1.0.1</version>
+   <description>Slider Modul-Modul</description>
+    
+   <files>
+      <filename module="mod_slider">mod_slider.php</filename>
+   </files>
+</extension>

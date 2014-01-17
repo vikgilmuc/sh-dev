@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0">
+
+	<name>COM_KINOPORTAL</name>
+	<creationDate>24. Januar 2013</creationDate>
+	<author>Tim Schürmann</author>
+	<authorEmail>info@tim-schuermann.de</authorEmail>
+	<authorUrl>http://www.tim-schuermann.de</authorUrl>
+	<copyright>(C) Tim Schürmann 2013</copyright>
+	<license>GNU General Public License</license>
+	<version>1.0.0</version> <!--  Versionsnummer der Komponente -->
+	<description>COM_KINOPORTAL_BESCHREIBUNG</description>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>  
+	
+	<files folder="site">
+		<filename>kinoportal.php</filename>
+		<filename>controller.php</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>language</folder>
+	</files>
+	
+	<administration>
+		<menu>COM_KINOPORTAL_MENUE</menu>
+		<files folder="admin">
+			<filename>kinoportal.php</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>views</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>controllers</folder>
+		</files>
+		
+		<languages folder="admin">
+			<language tag="de-DE">language/de-DE/de-DE.com_kinoportal.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_kinoportal.sys.ini</language>
+		</languages>
+	</administration>
+	
+</extension>

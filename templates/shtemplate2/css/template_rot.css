@@ -1,0 +1,30 @@
+body
+{
+        font-family: Helvetica,Arial,sans-serif;
+		color: red;
+}
+
+@font-face{
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+   /**  url('font/gillsansmtpro-ultrabold-webfont.eot') format('eot'),
+          url('font/gillsansmtpro-ultrabold-webfont.woff') format('woff'),
+          url('font/gillsansmtpro-ultrabold-webfont.ttf') format('truetype'),
+          url('font/gillsansmtpro-ultrabold-webfont.svg#abcd') format('svg');
+    font-weight: normal;
+   font-style: normal; **/
+}
+.logo img {width:150px}
+
+.fusszeile
+{
+      clear: both;
+      text-align: center;
+      font-size: small;
+      font-style: italic;
+      color: gray;
+}
+
+.suche
+{
+	float: right;
+}

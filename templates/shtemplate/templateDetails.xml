@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="3.0" type="template" client="site">
+
+   <!-- Ein paar allgemeine Informationen über das Template: -->
+   <name>SH template</name>
+   <creationDate>01.12.2013</creationDate>
+   <author>Victor Gil</author>
+   <authorEmail>victor@victorgil.name</authorEmail>
+   <authorUrl>http://www.victorgil.name</authorUrl>
+   <copyright>Copyright (C) 2013 Victor Gil, alle Rechte vorbehalten.</copyright>
+   <license>GNU GPL</license>
+   <version>0.1</version>
+   <description>Template für smiley-homes.at</description>
+
+   <!-- Alle Dateien und Verzeichnisse des Templates: -->
+   <files>
+	<folder>css</folder>
+    <folder>images</folder>
+	<folder>language</folder>
+	<folder>html</folder>
+    <filename>index.php</filename>
+    <filename>templateDetails.xml</filename>
+	<filename>template_thumbnail.png</filename>
+	<filename>template_preview.png</filename>
+	<filename>error.php</filename>
+   </files>
+
+   <!-- Die Positionen, die das Template anbietet: -->
+   <positions>
+      <position>position-0</position>
+      <position>position-2</position>
+      <position>position-7</position>
+      <position>position-8</position>
+   </positions>
+
+	<!-- Parameter -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="farbauswahl" type="list" default="blau" label="TPL_KINO_COLOR" description="TPL_KINO_COLOR_DESC">
+				<option value="blau">Blau</option>
+				<option value="rot">Rot</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+	<!-- Übersetzungen -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB.tpl_kinoportal_template.ini</language>
+		<language tag="de-DE">de-DE.tpl_kinoportal_template.ini</language>
+	</languages>
+</extension>

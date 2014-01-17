@@ -1,0 +1,38 @@
+.st-mega-menu-col {
+	float: left;
+}
+.st-mega-menu ,
+.st-mega-menu .st-mega-menu-col > ul {
+	margin: 0;
+}
+.st-mega-menu > li,
+.st-mega-menu .st-mega-menu-col > ul > li {
+	position: relative;
+	list-style: none;
+} 
+.st-mega-menu .st-mega-menu-col > ul > li > .st-mega-menu-row {
+	left: -9999px;
+	top: 0;
+	z-index: 9999;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.st-mega-menu .st-mega-menu-col > ul > li:hover > .st-mega-menu-row {
+	left: 110px;
+	top: 0;
+	z-index: 9999;
+	opacity: 1;
+	filter: alpha(opacity=99);
+}
+.st-mega-menu .st-mega-menu-col > ul > li.group > .st-mega-menu-row {
+	position: relative;
+	min-width: 100px;
+	left: auto;
+	opacity: 1;
+	margin: 0;
+	padding: 0;
+	z-index: 9990;
+}
+.st-mega-menu .st-mega-menu-col > ul > li.group > .title {
+	font-weight: bold;
+}
