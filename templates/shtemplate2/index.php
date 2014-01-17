@@ -32,7 +32,7 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 		
     </div>
     
-    <p> just a test </p>
+    <p> just another change on the test </p>
    
     <div class="suche"> 
 		<jdoc:include type="modules" name="position-0" style="html5" />
