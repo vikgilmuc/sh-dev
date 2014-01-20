@@ -1,14 +1,10 @@
 
-
-    
-   
-
 var Vikslider = function() {
     
     this.loadPage();
     this.init();
     this.slider();
-   this.menu(jQuery("ul li"));
+  // this.menu(jQuery("ul li"));
 
 };
 
@@ -16,7 +12,7 @@ Vikslider.prototype = {
     
     
     init : function() {
-        
+       
         var self = this;
          self.wWindow = jQuery(document).width();
          self.hWindow = jQuery(window).height();
@@ -50,8 +46,8 @@ Vikslider.prototype = {
         }
     },
 
-    homeAnimate : function(e, t) {
-        
+    homeAnimate : function(e, t) {},
+ /*
         var self = this;
        // var wWindow = jQuery(document).width();
         //var hWindow = jQuery(window).height();
@@ -106,10 +102,11 @@ Vikslider.prototype = {
             marginLeft : "0"
         }, n, "easeInOutExpo");
         e = t
+*/
+    
 
-    },
-
-    slider : function() {
+    slider : function() {} ,
+        /*
         var self = this;
         var e;
         e = "<ul>";
@@ -136,14 +133,18 @@ Vikslider.prototype = {
             return false;
         });
         self.autoSlide = setInterval(function(){self.homeAnimate()}, 5e3);
-    },
+    */
+   
 
-    loadPage : function () {
+    loadPage : function () {},
+        /*
         if(typeof autoSlide!=="undefined")clearTimeout(this.autoSlide);
-        
-    },
+        */
+
     
-    menu : function(obj) {
+    menu : function(obj) { }
+        /*
+        
         var self = this;
         if (!obj.length)
             return;
@@ -158,10 +159,11 @@ Vikslider.prototype = {
 		
 		function() {
             jQuery(this).find('ul').slideUp(300);
-        });
-    }
+        });*/
+   
 };
 
+/*
 jQuery(function() {
  
     // grab the initial top offset of the navigation 
@@ -174,7 +176,7 @@ jQuery(function() {
         // if we've scrolled more than the navigation, change its position to fixed to stick to top,
         // otherwise change it back to relative
         if (scroll_top > sticky_navigation_offset_top) { 
-            jQuery('#sticky_navigation').css({ 'position': 'fixed', 'z-index':'1', 'top':0, 'left':0 });
+            jQuery('#sticky_navigation').css({ 'position': 'fixed', 'z-index':'1', 'top':0, 'left':'100px' });
         } else {
             jQuery('#sticky_navigation').css({ 'position': 'relative' }); 
         }   
@@ -190,24 +192,4 @@ jQuery(function() {
  
 });
 
-
-jQuery(document).ready(function() {
-jQuery('#nav').onePageNav({
-    currentClass: 'current',
-    changeHash: false,
-    scrollSpeed: 750,
-    scrollOffset: 150,
-    scrollThreshold: 0.5,
-    filter: '',
-    easing: 'swing',
-    begin: function() {
-        //I get fired when the animation is starting
-    },
-    end: function() {
-        //I get fired when the animation is ending
-    },
-    scrollChange: function($currentListItem) {
-        //I get fired when you enter a section and I pass the list item of the section
-    }
-})});
-
+*/

@@ -13,18 +13,19 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head> 
 	<jdoc:include type="head" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="container">
    
  <div class="">
     <div class="logo row clearfix  "> <!-- Reihe 2 -->
-		<img  src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/smiley-homes-mit-schrift.png" alt="Smiley-homes Logo" />
+		<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/vectorlogosh.svg" class="img-responsive" alt="Smiley-homes Logo" />
     </div>
 </div>
     
       
-    <div class="row col-md-10 col-md-offset-1 clearfix"> <!-- Reihe 4 -->
+    <div class="row col-md10 col-md-offset-1 clearfix"> <!-- Reihe 4 -->
 		
 		 <jdoc:include type="component" style="html5" />  <!-- Hauptbereich -->
 		
@@ -32,7 +33,8 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 		
     </div>
     
-    <p> just another change on the test </p>
+    
+    
    
     <div class="suche"> 
 		<jdoc:include type="modules" name="position-0" style="html5" />

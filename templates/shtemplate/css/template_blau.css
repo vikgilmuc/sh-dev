@@ -1,10 +1,11 @@
 body
 {
         font-family: Helvetica,Arial,sans-serif;
-		color:black;
+		color:black; font-size: 100%;
+                           
 }
-.container{
-	padding: 0px; margin : 0px
+.header{
+	padding: 15px; 
 }
 
 @font-face{
@@ -17,14 +18,15 @@ body
    font-style: normal; **/
 }
 
+#nav {font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size:2em }
 .logo img {width:150px}
 
-#sticky_navigation_wrapper {}
+#sticky_navigation_wrapper { position: fixed; z-index:1;  }
 
 #home ul {position:relative;top:300px}
 
-.nav {font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-font-size: 3vw}
+
+
 
 .nav li {float:left}
 
@@ -55,11 +57,13 @@ font-size: 3vw}
 font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 font-size: 3vw}
 @media only screen and (max-device-width: 767px) { 
-	.logo img {width:75px}
+	.container{width:650px}
+	
 	
 	 }
 	 
-	 @media only screen and (min-width: 767px) { 
-	.container {width:100%}
+
+@media only screen and (min-width: 767px) { 
+	.container {}
 	
 	 }

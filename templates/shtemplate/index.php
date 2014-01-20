@@ -14,22 +14,39 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 <head> 
 	<jdoc:include type="head" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
 </head>
 <body>
 <div class="container"> 
 
 	
-	<div id="sticky_navigation_wrapper">
-	<div id="sticky_navigation">
-    <div class="row" > <!-- Reihe 1: main menu --> 
-    <div class="logo col-md-1"> 
-		<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/sh-logob.jpg" alt="Das Logo" />
+	<div id="sticky_navigation_wrapper"><!-- Reihe 1: header  --> 
+   
+	<div id="sticky_navigation"><!-- Reihe 1: header sticky_navigation --> 
+   
+    <div class="row header" > <!-- Reihe 1: header --> 
+   
+     <div class="">
+    <div class="logo col-md-2 col-sm-2 col-xs-2  "> <!-- Reihe 2 -->
+		<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/vectorlogosh.svg" class="img-responsive" alt="Smiley-homes Logo" />
     </div>
-    
-    	<div class="col-md-offset-2 navbar navbar-default navbar-collapse" id="nav" role="navigation">
+	</div>
+	<div class="col-md-10 col-sm-10 col-xs-2">
+    	<nav class="navbar navbar-default " role="navigation">
+    	<div class="navbar-header" >
+   		 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+     		 <span class="sr-only">Toggle navigation</span>
+      		<span class="icon-bar"></span>
+     		 <span class="icon-bar"></span>
+      		<span class="icon-bar"></span>
+   		 </button>
+   		 
+   		 </div>
+    	<div class=" collapse navbar-collapse" id="nav" >
     	
 		<jdoc:include type="modules" name="position-0" style="html5" />
+		</div>
+		</nav>
 		</div>
 	</div>
 	</div>
@@ -45,7 +62,7 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 	
       
     <div class="row"> <!-- Reihe 4 -->
-		<div class="span0"> <jdoc:include type="modules" name="position-7" style="kinostil" titelebene="3" /> </div> <!-- Module links -->
+		
 
 		<?php
 			if($this->params->get('farbauswahl') == "blau") $klasse="";  
@@ -58,28 +75,61 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 		<?php endif; ?>
 		
     </div>
-
+<div class="span0"> <jdoc:include type="modules" name="position-7" style="kinostil" titelebene="3" /> </div> <!-- Module links -->
 	<div class="fusszeile"><p><small>Smiley-homes</small></p></div>
 </div>
 
-<?php $doc->addScript('templates/'.$this->template.'/js/bootstrap.min.js'); ?>
 
-<?php $doc->addScript('templates/'.$this->template.'/js/jquery-1.10.2.min.js'); ?>
-<?php $doc->addScript('templates/'.$this->template.'/js/jquery.easing.1.3.js'); ?>
+
+
+<?php $doc->addScript('templates/'.$this->template.'/js/jquery-1.10.2.js'); ?>
+<?php $doc->addScript('templates/'.$this->template.'/js/jquery-1.10.2.js'); ?>
 <?php $doc->addScript('templates/'.$this->template.'/js/jquery.nav.js'); ?>
+
 <?php $doc->addScript('templates/'.$this->template.'/js/jquery.scrollTo.js'); ?>
+<?php $doc->addScript('templates/'.$this->template.'/js/jquery.easing.1.3.js'); ?>
+<?php $doc->addScript('templates/'.$this->template.'/js/bootstrap.min.js'); ?>
+<?php $doc->addScript('templates/'.$this->template.'/js/collapse.js'); ?>
+<?php $doc->addScript('templates/'.$this->template.'/js/transition.js'); ?>
 <?php $doc->addScript('templates/'.$this->template.'/js/sued3s.js'); ?>
-<script>
+
+  	<script>
 	
 	window.onload = function()
 	{
-
+	   
 	    
 		slider=new Vikslider();
+
+		jQuery('.collapse').collapse();
 		
-	}
+		jQuery('#nav ul a:first').addClass('current');
+
+	    
+		
+		
 	
-		
+		$('#nav').onePageNav({
+	    
+	   currentClass: 'current',
+	 changeHash: false,
+	    scrollSpeed: 750,
+	    scrollOffset: 150,
+	    scrollThreshold: 0.5,
+	    filter: ':not(.external)',
+	    easing: 'swing',
+	    begin: function() {
+	       // I get fired when the animation is starting
+	    },
+	    end: function() {
+	        //I get fired when the animation is ending
+	  },
+	    scrollChange: function($currentListItem) {
+	       // I get fired when you enter a section and I pass the list item of the section
+	    }
+	});
+	
+	};
 
 		
 	</script>

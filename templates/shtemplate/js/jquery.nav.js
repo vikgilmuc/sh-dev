@@ -49,6 +49,7 @@
 		},
 
 		init: function() {
+	
 			var self = this;
 			
 			// Introduce defaults that can be extended either
