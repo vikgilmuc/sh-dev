@@ -20,19 +20,19 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 <div class="container"> 
 
 	
-	<div id="sticky_navigation_wrapper"><!-- Reihe 1: header  --> 
+	<div class="navbar-fixed-top center navbar" ><!-- Reihe 1: header  id="sticky_navigation_wrapper"  --> 
    
-	<div id="sticky_navigation"><!-- Reihe 1: header sticky_navigation --> 
+	<div ><!-- Reihe 1: header sticky_navigation id="sticky_navigation" --> 
    
     <div class="row header" > <!-- Reihe 1: header --> 
    
      <div class="">
     <div class="logo col-md-2 col-sm-2 col-xs-2  "> <!-- Reihe 2 -->
-		<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/vectorlogosh.svg" class="img-responsive" alt="Smiley-homes Logo" />
+	<!--  	<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/vectorlogosh.svg" class="img-responsive" alt="Smiley-homes Logo" />-->
     </div>
 	</div>
-	<div class="col-md-10 col-sm-10 col-xs-2">
-    	<nav class="navbar navbar-default " role="navigation">
+	<div class="">
+    	<nav class=" " role="navigation">
     	<div class="navbar-header" >
    		 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
      		 <span class="sr-only">Toggle navigation</span>
@@ -75,6 +75,11 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 		<?php endif; ?>
 		
     </div>
+    
+    <div id="kontakt">
+    <h1>Hier stellen wir den Kontakt</h1>
+    </div>
+    
 <div class="span0"> <jdoc:include type="modules" name="position-7" style="kinostil" titelebene="3" /> </div> <!-- Module links -->
 	<div class="fusszeile"><p><small>Smiley-homes</small></p></div>
 </div>

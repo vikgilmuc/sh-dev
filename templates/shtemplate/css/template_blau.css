@@ -4,6 +4,19 @@ body
 		color:black; font-size: 100%;
                            
 }
+.center.navbar .nav,
+.center.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+.center .navbar-inner {
+    text-align:center;
+}
+
 .header{
 	padding: 15px; 
 }
@@ -19,9 +32,11 @@ body
 }
 
 #nav {font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size:2em }
-.logo img {width:150px}
+.logo img {width:100px}
 
-#sticky_navigation_wrapper { position: fixed; z-index:1;  }
+.menunav {background-color: rgba(255,255,255,0.5);}
+
+#sticky_navigation_wrapper {  }
 
 #home ul {position:relative;top:300px}
 
@@ -41,6 +56,7 @@ body
 
 
 #maincontent img{width: 100%}
+#wohnungen img {width:20px; text-justify:center}
 .item-image {width:100%}
 .suche
 {

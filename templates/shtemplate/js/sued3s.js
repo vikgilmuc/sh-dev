@@ -30,7 +30,7 @@ Vikslider.prototype = {
         jQuery("#homePanels").width(self.wWindow * self.nPanel + "px").css({
             marginLeft : "-" + n + "px"
         });
-        jQuery("#parallax-bg1 .panel, #parallax-bg1 .panel .info, #parallax-bg1 .panel .infoContent")
+        jQuery("#parallax-bg1 .panel, #parallax-bg1 .panel .info, #parallax-bg1 .panel .infoContent, #lage , #wohnungen, #kontakt" )
                 .each(
                         function() {
                             jQuery(this).width(self.wWindow + "px").height(
@@ -176,9 +176,9 @@ jQuery(function() {
         // if we've scrolled more than the navigation, change its position to fixed to stick to top,
         // otherwise change it back to relative
         if (scroll_top > sticky_navigation_offset_top) { 
-            jQuery('#sticky_navigation').css({ 'position': 'fixed', 'z-index':'1', 'top':0, 'left':'100px' });
+            jQuery('#sticky_navigation').css({ 'position': 'fixed', 'z-index':'1', 'top':0,  });
         } else {
-            jQuery('#sticky_navigation').css({ 'position': 'relative' }); 
+            jQuery('#sticky_navigation').css({ 'position': 'relative',  }); 
         }   
     };
      

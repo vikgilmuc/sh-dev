@@ -5,8 +5,13 @@ DEFINE('_ISO','charset=iso-8859-1');
 ?>
 <div id="projekt_zirl">
 <div class="row" style="position:relative; z-index:0">
-<div class="col-md-12">
+<div class="">
+<audio autoplay="autoplay">
+  <source src="<?php echo (JURI::base())?>/images/bird.mp3" type="audio/mpeg">
+  <source src="<?php echo (JURI::base())?>/images/bird.ogg" type="audio/ogg">
 
+  <embed height="50" width="100" src="<?php echo (JURI::base())?>images/bird.mp3">
+</audio>
 
 	<div id="page-wrapper">
 		<div id="parallax-bg1" class="a100">
