@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 function modChrome_kinostil( $module, &$params, &$attribs ) {
-      echo "<div>";
+      echo "<div>";echo "</div>";
       
       /* Prüfen, ob die Anzahl übergeben wurde */
       if(isset($attribs['titelebene'])) $titelebene=$attribs['titelebene'];

@@ -17,7 +17,8 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 </head>
 <body>
 <div class="container">
-   
+  <div class="head-menu"> <jdoc:include type="modules" name="position-0"  /> </div>  
+	
  <div class="">
     <div class="logo row clearfix  "> <!-- Reihe 2 -->
 		<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/vectorlogosh.svg" class="img-responsive" alt="Smiley-homes Logo" />
@@ -37,12 +38,11 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
     
    
     <div class="suche"> 
-		<jdoc:include type="modules" name="position-0" style="html5" />
+		<jdoc:include type="modules" name="position-0"  />
 	</div>
     
+<div class="fusszeile"> <jdoc:include type="modules" name="position-7" style="kinostil" titelebene="3" /> </div> 
+	</div>
 
-	<div class="fusszeile"> <jdoc:include type="modules" name="position-7" style="kinostil" titelebene="3" /> </div> <!-- Module links -->
-	
-</div>
 </body>
 </html>

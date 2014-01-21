@@ -26,7 +26,7 @@ DEFINE('_ISO','charset=iso-8859-1');
 							</div>
 						</div>
 						
-						<img class="img-responsive" style="width:100%"src="<?php echo (JURI::base())?>/images/home/pasarelle2.png" alt="Kuche" />
+						<img class="img-responsive" style="width:100%"src="<?php echo (JURI::base())?>/images/home/DSCN0451b.jpg" alt="Kuche" />
 
 					</div>
 					<!--  <div class="panel" id="panel2">

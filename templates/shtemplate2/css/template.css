@@ -3,13 +3,10 @@ body
     font-family: Helvetica,Arial,sans-serif;
 }
 
+
 .fusszeile
 {
-	clear: both;
-    text-align: center;
-    font-size: small;
-    font-style: italic;
-    color: gray;
+	
 }
 
 .suche

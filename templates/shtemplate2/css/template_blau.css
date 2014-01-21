@@ -11,7 +11,7 @@ body
   background-size: cover;
 }
 
-
+.logo {padding: 0px}
 @font-face{
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
    /**  url('font/gillsansmtpro-ultrabold-webfont.eot') format('eot'),
@@ -39,16 +39,25 @@ font-size: 1.5vw; color: black; text-align: left;margin-bottom: 50px
 .fusszeile
 {
       clear: both;
-      text-align: center;
+      text-align: left;
       font-size: small;
       font-style: italic;
-      color: gray;
-      height: 150px;
+      color: black;
 }
-
+.nav {font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size:2em }
+.nav a{color:black}
+.nav > li > a {
+  display: inline;
+  padding: 10px 15px;
+  position: relative;
+  float:right;
+}
+.navbar-fixed-bottom .nav li {
+  float: right;
+}
 .caret {color:black}
 .item-page li {list-style-image: url(../images/smiley-homes-list.png)}
 .suche
 {
-	clean: both; color: black;
+	 color: black;
 }
