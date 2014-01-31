@@ -8,6 +8,8 @@ class SmileyhomesViewSmileyhomes extends JViewLegacy
 
 	function display($tpl = null)
 	{
+		
+		
 		// Hole Filme vom Model, und speichere sie in $allefilme:
 		$this->allewohnungen = $this->get('Wohnungen');
 		

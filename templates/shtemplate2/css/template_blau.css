@@ -4,11 +4,11 @@ body
 		
 		background-image:url(../images/background.png);
 		background-position: 50% 0px;
-		background-repeat:no-repeat center center fixed;
-		-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+		background-repeat:no-repeat;
+		-webkit-background-size: 2500px;
+  -moz-background-size: 2500px;
+  -o-background-size: 2500px;
+  background-size: 2500px;
 }
 
 .logo {padding: 0px}
@@ -43,6 +43,8 @@ font-size: 1.5vw; color: black; text-align: left;margin-bottom: 50px
 .form-horizontal .control-label {
   text-align: left;
 }
+
+#wohnungen p {margin-bottom: 0px;}
 
 .fusszeile
 {

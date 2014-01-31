@@ -15,7 +15,7 @@ class SmileyhomesModelSmileyhomes extends JModelLegacy
 		$query = $datenbank->getQuery(true);
 		$query->from('#__wohnungen');
 		$query->select('*');
-		$query->order('meter');
+		$query->order('id');
 
 		// Anfrage ausführen und alle Filme entgegennehmen:
 		$datenbank->setQuery((string)$query);
