@@ -35,6 +35,14 @@ font-size: 2vw; color: black;text-align: left}
 p{font-family: Lucida Sans Unicode;
 font-size: 1.5vw; color: black; text-align: left;margin-bottom: 50px
 }
+#menuspace {height: 80px}
+#login {position: fixed; bottom: 50px; right: 100px; background-color: white ; display: none}
+#projekt_zirl { position: relative;top: 20px}
+
+#login:hover {display: block}
+.form-horizontal .control-label {
+  text-align: left;
+}
 
 .fusszeile
 {

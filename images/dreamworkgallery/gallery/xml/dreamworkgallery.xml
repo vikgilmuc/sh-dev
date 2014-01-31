@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<mobileSettings>
+		<currencySymbol>$</currencySymbol>
+		<width>710</width>
+		<height>630</height>
+	    <containerid>com</containerid>
+	    <heightManual>no</heightManual>
+        <mheight1></mheight1>
+        <mheight2></mheight2>
+        <mheight3></mheight3>
+        <mheight4></mheight4>
+</mobileSettings>
+	<settings><background>
+	<color code="CCCCCC" alpha="1" />	</background><viewer>
+	<align_image_in_fullscreen>center</align_image_in_fullscreen>
+	<base>
+			<color code="#cccccc" alpha="1" />
+		</base><effect>
+			<type>1</type>
+			<time>2</time>
+			<closingType>default</closingType>
+				<preloader>
+					<color code="#202020" alpha="1" />
+				</preloader>
+		</effect>
+
+		<description position="top">
+
+				<effect>1</effect>
+
+				<base>
+					<color code="#020202" alpha="0.7" />
+				</base>
+
+				<text>
+					<size>12</size>
+					<color code="#FFFFFF" alpha="1" />
+				</text>
+		</description>
+
+		<priceTag enabled="yes">
+
+				<tag width="120" height="120">http://localhost/smiley-homes/components/com_dreamworkgallery/price_images/flower_red.png</tag>
+
+				<position>BL</position>
+
+				<symbol>$</symbol>
+
+				<label>
+					<size>20</size>
+					<color code="#FFFFFF" alpha="1" />
+				</label>
+
+			</priceTag><controls position="bottom" show="true">
+
+				<base>
+					<color code="#524B46" alpha="0.7" />
+				</base>
+
+				<arrow>
+
+					<base>
+						<up>
+							<color code="#FBFBFB" alpha="0" />
+						</up>
+						<over>
+							<color code="#FBFBFB" alpha="0.6" />
+						</over>
+						<down>
+							<color code="#FBFBFB" alpha="0.6" />
+						</down>
+					</base>
+
+					<arrow>
+						<up>
+							<color code="#FBFBFB" alpha="1" />
+						</up>
+						<over>
+							<color code="#020202" alpha="1" />
+						</over>
+						<down>
+							<color code="#020202" alpha="1" />
+						</down>
+					</arrow>
+
+				</arrow> <category>
+
+					<base>
+						<up>
+							<color code="#FBFBFB" alpha="0" />
+						</up>
+						<over>
+							<color code="#FBFBFB" alpha="0.6" />
+						</over>
+						<down>
+							<color code="#FBFBFB" alpha="0.3" />
+						</down>
+					</base>
+
+					<symbol>
+						<up>
+							<color code="#FBFBFB" alpha="1" />
+						</up>
+						<over>
+							<color code="#020202" alpha="1" />
+						</over>
+						<down>
+							<color code="#020202" alpha="0.5" />
+						</down>
+					</symbol>
+
+				</category> <display>
+
+					<base>
+						<up>
+							<color code="#FBFBFB" alpha="0" />
+						</up>
+						<over>
+							<color code="#FBFBFB" alpha="0.6" />
+						</over>
+						<down>
+							<color code="#FBFBFB" alpha="1" />
+						</down>
+					</base>
+
+					<circle>
+						<up>
+							<color code="#FBFBFB" alpha="1" />
+						</up>
+						<over>
+							<color code="#020202" alpha="1" />
+						</over>
+						<down>
+							<color code="#020202" alpha="1" />
+						</down>
+					</circle>
+
+					<symbol>
+						<up>
+							<color code="#020202" alpha="1" />
+						</up>
+						<over>
+							<color code="#FBFBFB" alpha="1" />
+						</over>
+						<down>
+							<color code="#FBFBFB" alpha="1" />
+						</down>
+					</symbol>
+
+				</display>
+
+				<autoplay displayTime="10" default="on">
+
+					<base>
+						<up>
+							<color code="#FBFBFB" alpha="0" />
+						</up>
+						<over>
+							<color code="#FBFBFB" alpha="0.6" />
+						</over>
+						<down>
+							<color code="#FBFBFB" alpha="0.6" />
+						</down>
+					</base>
+
+					<animation>
+						<up>
+							<color code="#FBFBFB" alpha="1" />
+						</up>
+						<over>
+							<color code="#020202" alpha="1" />
+						</over>
+						<down>
+							<color code="#020202" alpha="1" />
+						</down>
+					</animation>
+
+					<symbol>
+						<up>
+							<color code="#FBFBFB" alpha="1" />
+						</up>
+						<over>
+							<color code="#020202" alpha="1" />
+						</over>
+						<down>
+							<color code="#020202" alpha="1" />
+						</down>
+					</symbol>
+
+				</autoplay>
+
+			</controls></viewer>
+
+		<thumbsPanel position="bottom" height="76">
+
+			<base>
+				<color code="#2C2C2C" alpha="1" />
+			</base>
+
+			<thumb width="86" height="64">
+
+				<base>
+					<up>
+						<color code="#FEFEFE" alpha="1" />
+					</up>
+					<over>
+						<color code="#0EF44A" alpha="1" />
+					</over>
+					<down>
+						<color code="#0EF44A" alpha="1" />
+					</down>
+					<selected>
+						<color code="#0EF44A" alpha="1" />
+					</selected>
+				</base>
+
+				<preloader>
+					<color code="#202020" alpha="1" />
+				</preloader>
+
+			</thumb>
+
+			<tooltip>
+
+				<base>
+					<color code="#FBFBFB" alpha="0.8" />
+				</base>
+
+				<label>
+					<color code="#202020" alpha="1" />
+				</label>
+
+			</tooltip>
+
+
+			<arrow>
+				<up>
+					<color code="#0EF44A" alpha="1" />
+				</up>
+				<over>
+					<color code="#0EF44A" alpha="1" />
+				</over>
+				<down>
+					<color code="#0EF44A" alpha="1" />
+				</down>
+			</arrow>
+
+
+		</thumbsPanel><category_list>
+<showOnStart>true</showOnStart>
+			<height>365</height>
+			<item>
+				<title_size>15</title_size>
+				<description_size>12</description_size>
+				<title_color>FFFFFF</title_color>
+				<description_color>FFFFFF</description_color>
+				<background_color>606060</background_color>
+				<color_over>1f1f1f</color_over>
+				<width>330</width>
+				<height>125</height>
+				<thumb_width>89</thumb_width>
+				<thumb_height>97</thumb_height>
+				<thumb_border_size>4</thumb_border_size>
+				<thumb_border_color>FFFFFF</thumb_border_color>
+			</item>
+			<scroll>
+				<background_color>77c001</background_color>
+				<element_color>f5f5f5</element_color>
+				<element_icon_color>000000</element_icon_color>
+			</scroll>
+			<close>
+				<background_color>77c001</background_color>
+				<icon_color>f5f5f5</icon_color>
+				<background_color_over>f5f5f5</background_color_over>
+				<icon_color_over>77c001</icon_color_over>
+			</close>
+		</category_list> </settings><content><category><title><![CDATA[Zirl Gallery]]></title><description><![CDATA[Gebaude]]></description><thumb scale="true">http://localhost/smiley-homes/images/dreamworkgallery/galleries/2014-01-27 12.39.55.jpg</thumb> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/smiley-homes/images/dreamworkgallery/gallery/2014-01-27 12.49.10.jpg</main> <thumb scale="yes">http://localhost/smiley-homes/images/dreamworkgallery/gallery/2014-01-27 12.49.10_thumb.jpg</thumb><label><![CDATA[zweite]]></label><description><![CDATA[]]></description><link window="current"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/smiley-homes/images/dreamworkgallery/gallery/2014-01-27 12.35.46.jpg</main> <thumb scale="yes">http://localhost/smiley-homes/images/dreamworkgallery/gallery/2014-01-27 12.35.46_thumb.jpg</thumb><label><![CDATA[erste]]></label><description><![CDATA[]]></description><link window="current"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item></category></content></data>

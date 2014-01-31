@@ -13,9 +13,9 @@ class JConfig {
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
 	public $host = 'localhost';
-	public $user = 'root';
-	public $password = 'UVGL0001';
-	public $db = 'smiley-homes';
+	public $user = 'u17958_sa10304';
+	public $password = 'DSpPcQu238fTMFUu';
+	public $db = 'db17958_smiley-homes';
 	public $dbprefix = 'lqstn_';
 	public $live_site = '';
 	public $secret = 'vo1ZyhSWxOU08zDf';

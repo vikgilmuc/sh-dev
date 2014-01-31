@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Gallery Dreamwork">
+        <message>Gallery Dreamwork</message>
+    </layout>
+    <fields name="params">
+		<fieldset name="Dreamwork Common" label="Dreamwork Common" >
+			<field name="category_id" type="text" default="0" label="Category Id" description="Enter comma seperated Category Id's you would like to display products related to a perticular Category. 0 for showing all products and all categories" />
+			<field name="activate_resp_tpl" type="list" default="yes" label="Responsive Template" description="Choose Responsive Template type">
+				<option value="no">type 1</option>
+				<option value="yes">type 2</option>
+			</field>
+		</fieldset>
+	<fieldset name="Dreamwork Responsive 1" label="Dreamwork Responsive 1" >
+			<field name="@spacer" type="spacer" default="General settings" label="" description="" />
+
+			<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+			<field name="bannerWidth" type="text" default="710" label="Slideshow Width (px)" description="Width of Slideshow(for desktop)."/>
+
+            <field name="bannerHeight" type="text" default="630" label="Slideshow Height (px)" description="Height of Slideshow "/>
+
+            <field name="@spacer" type="spacer" default="" label="Mobile responsive" description="Width will be automatically adjusted with container but need to fix height for different devices" />
+            <field name="heightManual" type="radio" default="no" label="Apply banner height manually" description="Set banner height manually(yes=Recommended if different resolution images are shown, No=Automatically adjust gallery height and ignore below (4)heights)">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </field>
+            <field name="bannerHeight1" type="text" default="" label="Height1 for width range[768-959](px)" description="Only tablet(portrait) and phone(landscape)"/>
+            <field name="bannerHeight2" type="text" default="" label="Height2 for width range[568-767](px)" description="Only tablet(landscape)"/>
+            <field name="bannerHeight3" type="text" default="" label="Height3 for width range[480-567](px)" description="Only phone(landscape)"/>
+            <field name="bannerHeight4" type="text" default="" label="Height4 for max-width[479](px)" description="Only phone(portrait)"/>
+            <field name="@spacer" type="spacer" default="" label="" description="" />
+
+<field name="base_color" type="text" default="#cccccc" label="Slideshow Background color" description="Slideshow Background color." class="color"/>
+
+<field name="basecolor_alpha" type="list" default="1" label="Background Color Alpha" description="Background Color Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+<field name="imgalign_fullscreen" type="radio" default="center" label="Image Allign In Fullscreen Mode" description="Image Allign In Fullscreen Mode .">
+   <option value="top">Top</option>
+   	<option value="center">Center</option>
+	<option value="bottom">Bottom</option>
+</field>
+
+<field name="effect_type" type="list" default="1" label="Slideshow Effect" description="Slideshow Effect Type.">
+<option value="1">Fades In</option>
+<option value="2">zooms out</option>
+<option value="3">Elastic Zoom In</option>
+<option value="4">Blur Zoom Out</option>
+<option value="5">Elastic Slide</option>
+<option value="6">Squares</option>
+<option value="7">Triple Squares</option>
+<option value="8">Horizontal Stripes</option>
+<option value="9">Vertical Stripes</option>
+<option value="10">Waves</option>
+<option value="11">Scales Bars</option>
+<option value="12">Bounce Slide</option>
+<option value="13">Iris</option>
+<option value="14">Alpha Mask</option>
+<option value="15">Intersected Bars</option>
+</field>
+
+<field name="effect_time" type="text" default="2" label="Image Transition Time" description="Slideshow Image Transition Time."/>
+
+<field name="closing_type" type="list" default="default" label="Effect Closing Type" description="Effect Closing Type.">
+	<option value="default">default</option>
+	<option value="fade">Fade</option>
+</field>
+<field name="desc_position" type="radio" default="top" label="Description Position" description="Description Position .">
+   <option value="top">Top</option>
+	<option value="bottom">Bottom</option>
+</field>
+
+<field name="desc_effect" type="list" default="1" label="Description Effect" description="Description Effect.">
+	<option value="1">No effect</option>
+	<option value="2">Linear Fade</option>
+	<option value="3">Linear Drop</option>
+	<option value="4">Linear Elastic Drop</option>
+	<option value="5">Linear Pop</option>
+	<option value="6">Linear Elastic Pop</option>
+	<option value="7">Random Elastic Drop</option>
+</field>
+
+<field name="desc_basecolor" type="text" default="#020202" label="Description Base Color" description="Description Base Color." class="color"/>
+
+<field name="desc_alpha" type="list" default="0.7" label="Description Basecolor Alpha" description="Description Basecolor Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+<field name="desctext_size" type="text" default="12" label="Description Size" description="Description Size."/>
+
+<field name="desctext_color" type="text" default="#FFFFFF" label="Description Color" description="Description Color." class="color"/>
+
+<field name="desctext_alpha" type="list" default="1" label="Description Color Alpha" description="Description Textcolor Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+<field name="show_control" type="radio" default="yes" label="Show Control Buttons" description="Show Control Buttons.">
+   <option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+
+<field name="control_position" type="radio" default="bottom" label="Control Buttons Position" description="Control Position .">
+   <option value="top">Top</option>
+	<option value="bottom">Bottom</option>
+</field>
+
+
+<field name="control_basecolor" type="text" default="#524B46" label="Control Buttons Background Color" description="Control Buttons Background Color." class="color"/>
+
+<field name="control_basecoloralpha" type="list" default="0.7" label="Control Buttons Background Color Alpha" description="Control Buttons Background Color Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+<field name="show_price" type="radio" default="yes" label="Show Price" description="Show/Hide Price.">
+   <option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+
+<field name="show_disprice" type="radio" default="no" label="Show Discount Price" description="Show/Hide Discount Price.">
+   <option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+
+<field name="price_img" type="list" default="flower_red.png" label="Price Image" description="Price Background Image">
+			<option value="flower_blue.png">Flower Blue</option>
+			<option value="flower_green.png">Flower Green</option>
+			<option value="flower_mauve.png">Flower Mauve</option>
+			<option value="flower_red.png">Flower Red</option>
+			<option value="star_blue.png">Star Blue</option>
+			<option value="star_green.png">Star Green</option>
+			<option value="star_fuchsia.png">Star Fuchsia</option>
+			<option value="star_orange.png">Star Orange</option>
+			<option value="stiker_green.png">Stiker Green</option>
+			<option value="stiker_mauve.png">Stiker Mauve</option>
+			<option value="stiker_orange.png">Stiker Orange</option>
+			<option value="stiker_red.png">Stiker Red</option>
+		</field>
+
+<field name="price_imgwidth" type="text" default="120" label="Price Image Width" description="Price Image Width."/>
+
+<field name="price_imgheight" type="text" default="120" label="Price Image Height" description="Price Image Height."/>
+
+<field name="price_location" type="list" default="BL" label="Price Tag Location" description="Price Display Location.">
+<option value="TL">Top Left</option>
+<option value="TR">Top Right</option>
+<option value="BL">Bottom Left</option>
+<option value="BR">Bottom Right</option>
+</field>
+
+<field name="currency" type="text" default="$" label="Currency" description="Currency Symbol."/>
+
+<field name="price_size" type="text" default="20" label="Price Text Size" description="Price Text Size."/>
+
+<field name="price_color" type="text" default="#FFFFFF" label="Price Text Color" description="Price Text Color." class="color"/>
+
+<field name="price_color_alpha" type="list" default="1" label="Price Color Aplha" description="Price Color Aplha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+<field name="autoplay" type="radio" default="on" label="Auto Play" description="Enable/Disable Auto Play .">
+   <option value="on">Enable</option>
+	<option value="off">disable</option>
+</field>
+
+<field name="autoplay_display_time" type="text" default="10" label="Autoplay Transition Time" description="Autoplay Display Time."/>
+
+<field name="thumbnav_arrowcolor" type="text" default="#0EF44A" label="Thumb Navigation Arrow Color" description="Thumbnail Navigation Arrow Color." class="color"/>
+<field name="thumbnav_arrow_alpha" type="list" default="1" label="Thumb Navigation Arrow Color Alpha" description="Thumb Navigation Arrow Color Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+<field name="thumbnav_arrow_mouseovercolor" type="text" default="#0EF44A" label="Thumb Navigation Arrow Mouseover Color" description="Thumbnail Navigation Arrow Mouseover Color." class="color"/>
+<field name="thumbnav_arrow_mouseovercolor_alpha" type="list" default="1" label="Thumb Navigation Arrow Mouseover Color Alpha" description="Thumb Navigation Arrow Mouseover Color Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+<field name="thumbnav_arrow_onclickcolor" type="text" default="#0EF44A" label="Thumb Navigation Arrow Onclick Color" description="Thumbnail Navigation Arrow Onclick Color." class="color"/>
+<field name="thumbnav_arrow_Onclickcolor_alpha" type="list" default="1" label="Thumb Navigation Arrow Onclick Color Alpha" description="Thumb Navigation Arrow Onclick Color Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+<field name="thumbpanel_position" type="radio" default="bottom" label="Thumbpanel Position" description="Thumbpanel Position .">
+   <option value="top">Top</option>
+	<option value="bottom">Bottom</option>
+</field>
+
+<field name="thumbpanel_height" type="text" default="76" label="Thumbpanel Height" description="Thumbpanel Height."/>
+
+<field name="thumbpanel_base_color" type="text" default="#2C2C2C" label="Thumbpanel Base Color" description="Thumbpanel Base Color." class="color"/>
+
+<field name="thumbpanel_base_alpha" type="list" default="1" label="Thumbpanel Base Color Alpha" description="Thumbpanel Base Color Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+<field name="thumb_width" type="text" default="86" label="Thumb Image Width" description="Thumb Image Width."/>
+
+<field name="thumb_height" type="text" default="64" label="Thumb Imgage Height" description="Thumb Image height Color."/>
+
+<field name="thumb_baseup_color" type="text" default="#FEFEFE" label="Thumb Image Basecolor" description="Thumb Image Basecolor." class="color"/>
+
+
+<field name="thumb_mouseover_color" type="text" default="#0EF44A" label="Thumb Image Active Color" description="Thumb Image Mouseover,Active,navigation arrow Colors." class="color"/>
+
+<field name="tooltip_base_color" type="text" default="#FBFBFB" label="Tooltip Bgcolor" description="Tooltip Background Color." class="color"/>
+
+<field name="tooltip_base_alpha" type="list" default="0.8" label="Tooltip Bgcolor Alpha" description="Tooltip Background Color Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+
+<field name="tooltip_label_color" type="text" default="#202020" label="Tooltip Color" description="Tooltip Color." class="color"/>
+
+<field name="tooltip_label_alpha" type="list" default="1" label="Tooltip Color Alpha" description="Tooltip Color Alpha.">
+<option value="0">0</option>
+<option value="0.1">0.1</option>
+<option value="0.2">0.2</option>
+<option value="0.3">0.3</option>
+<option value="0.4">0.4</option>
+<option value="0.5">0.5</option>
+<option value="0.6">0.6</option>
+<option value="0.7">0.7</option>
+<option value="0.8">0.8</option>
+<option value="0.9">0.9</option>
+<option value="1">1</option>
+</field>
+
+
+<!--<field name="item_interactive" type="radio" default="no" label="Item Interactive" description="Item Interactive">
+   <option value="no">No</option>
+	<option value="Yes">Yes</option>
+</field>-->
+
+<field name="item_zoom" type="radio" default="enabled" label="Zoom" description="Enable/Disable Image Zoom">
+   <option value="enabled">Enabled</option>
+	<option value="disabled">Disabled</option>
+</field>
+
+<field name="mainImg_scale" type="radio" default="yes" label="Big Image Scaling" description="Big Image Scale.">
+   <option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+
+<field name="thumbImg_scale" type="radio" default="yes" label="Thumb Image Scaling" description="Thumb Image Scale.">
+   <option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+
+  
+<field name="show_tooltip" type="radio" default="on" label="Thumb Images Tooltip" description="Show/Hide Tooltip">
+   <option value="on">Show</option>
+	<option value="off">Hide</option>
+</field>
+
+<field name="show_desc" type="radio" default="on" label="Description" description="Show/Hide Description">
+   <option value="on">Show</option>
+	<option value="off">Hide</option>
+</field>
+
+<!--<field name="defaultSelectedCategory" type="text" default="0" label="Default Selected Category ID" description="ID of the category to be active by default. 0- first in the list."/>-->
+<field name="showOnStart" type="radio" default="on" label="Category list initially" description="Show/Hide window of categories when the gallery loads initially">
+   <option value="on">Show</option>
+	<option value="off">Hide</option>
+</field>
+
+<field name="catlist_height" type="text" default="365" label="Category List Height" description="Category List Height."/>
+
+<field name="catlist_bgcolor" type="text" default="606060" label="Category List Bgcolor" description="Category List Bgcolor." class="color"/>
+
+<!--<field name="catlist_bgovercolor" type="text" default="1f1f1f" label="Category list Bg overcolor" description="Category List Bg overcolor."/>-->
+
+<field name="catlist_itemwidth" type="text" default="330" label="Category list item width" description="Category List Item width."/>
+
+<field name="catlist_itemheight" type="text" default="125" label="Category list item height" description="Category list item height."/>
+
+<!--<field name="catlist_thmbwidth" type="text" default="89" label="Category list Thumb width" description="Category List Item width."/>
+
+<field name="catlist_thmbheight" type="text" default="97" label="Category list Thumb height" description="Category list item height."/>-->
+
+<field name="catlist_thmbbordersize" type="text" default="4" label="Category list thumb border width" description="Category list thumb border width."/>
+
+<field name="catlist_thmbbordercolor" type="text" default="FFFFFF" label="Category list thumb border color" description="Category list thumb border color." class="color"/>
+
+<field name="catlist_titlecolor" type="text" default="FFFFFF" label="Category Title Color" description="Category Title Size." class="color"/>
+
+<field name="catlist_titlesize" type="text" default="15" label="Category Title Size" description="Category Title Color."/>
+
+<field name="catlist_desccolor" type="text" default="FFFFFF" label="Category Description Color" description="Category Description Size." class="color"/>
+
+<field name="catlist_descsize" type="text" default="12" label="Category Description Size" description="Category Description Size."/>
+
+<field name="catlist_scollerbgcolor" type="text" default="77c001" label="Category List Scoller Bgcolor" description="Category List Scoller Bgcolor." class="color"/>
+
+<field name="catlist_scollerarrowcolor" type="text" default="f5f5f5" label="Category List Scoller Arrow color" description="Category List Scoller Arrow color." class="color"/>
+
+<field name="target" type="list" default="current" label="Target Link" description="Open Targetlink in samewindow/new window.">
+	<option value="current">Same Window</option>
+	<option value="new">New Window</option>
+</field>
+<field name="catppv_flag" type="radio" default="2" label="Fix IE cache bug" description="IE cache bug: Different instances of module shows the same flash output. If enabled different xml and swf file names will be created for each shown category." > 
+	<option value="1">yes</option>
+	<option value="2">no</option>
+</field>
+	</fieldset>
+
+	<fieldset name="Dreamwork Responsive 2" label="Dreamwork Responsive 2" >
+<field name="nrOfThumbsToShowOnSet" type="text" default="30" label="Number Of Thumbs To Show On Set" description="Number Of Thumbs To Show On Set"/>
+<field name="nrOfThumbsPerPage" type="text" default="30" label="Items per page" description="Number of items prepared for one page. One page can hold many sets."/>
+<field name="showContextMenu" type="list" default="yes" label="Show Context Menu" description="Show Context Menu">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="thumbnailOverlayType" type="list" default="text" label="Thumbnail Overlay Type" description="Thumbnail Overlay Type">
+	<option value="text">text</option>
+	<option value="icons">icons</option>
+	<option value="none">none</option>
+</field>
+<field name="addMargins" type="list" default="yes" label="Add the vertical or horizontal sapce to the grid margins" description="Add the vertical or horizontal sapce to the grid margins">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="loadMoreThumbsButtonOffest" type="text" default="0" label="Load More Thumbs Button Offest" description="Load More Thumbs Button Offest"/>
+<field name="horizontalSpaceBetweenThumbnails" type="text" default="6" label="Horizontal Space Between Thumbnails" description="Horizontal Space Between Thumbnails"/>
+<field name="verticalSpaceBetweenThumbnails" type="text" default="6" label="Vertical Space Between Thumbnails" description="Vertical Space Between Thumbnails"/>
+<field name="thumbBorderSize" type="text" default="4" label="Thumb Border Size" description="Thumb Border Size"/>
+<field name="thumbnailOverlayOpacity" type="text" default=".85" label="Thumbnail Overlay Opacity" description="Thumbnail Overlay Opacity"/>
+<field name="backgroundColor" type="text" default="CCCCCC" label="Background Color" description="Background Color" class="color"/>
+<field name="thumbnailOverlayColor" type="text" default="000000" label="Thumbnail Overlay Color" description="Thumbnail Overlay Color" class="color"/>
+<field name="thumbnailBackgroundColor" type="text" default="333333" label="Thumbnail Background Color" description="Thumbnail Background Color" class="color"/>
+<field name="thumbnailBorderNormalColor" type="text" default="FFFFFF" label="Thumbnail Border Normal Color" description="Thumbnail Border Normal Color" class="color"/>
+<field name="thumbnailBorderSelectedColor" type="text" default="FFFFFF" label="Thumbnail Border Selected Color" description="Thumbnail Border Selected Color" class="color"/>
+<field name="addLightBoxKeyboardSupport" type="list" default="yes" label="Add Light Box Keyboard Support" description="Add Light Box Keyboard Support">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="showLightBoxNextAndPrevButtons" type="list" default="yes" label="Show Light Box Next And Prev Buttons" description="Show Light Box Next And Prev Buttons">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="showLightBoxZoomButton" type="list" default="yes" label="Show Light Box Zoom Button" description="Show Light Box Zoom Button">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="showLightBoxInfoButton" type="list" default="yes" label="Show Light Box Info Button" description="Show Light Box Info Button">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="showLighBoxSlideShowButton" type="list" default="yes" label="Show Ligh Box Slide Show Button" description="Show Ligh Box Slide Show Button">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="slideShowAutoPlay" type="list" default="no" label="Slide Show Auto Play" description="Slide Show Auto Play">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="lighBoxBackgroundColor" type="text" default="000000" label="Ligh Box Background Color" description="Ligh Box Background Color" class="color"/>
+<field name="lightBoxInfoWindowBackgroundColor" type="text" default="FFFFFF" label="Light Box Info Window Background Color" description="Light Box Info Window Background Color" class="color"/>
+<field name="lightBoxItemBorderColor" type="text" default="FFFFFF" label="Light Box Item Border Color" description="Light Box Item Border Color" class="color"/>
+<field name="lightBoxItemBackgroundColor" type="text" default="222222" label="Light Box Item Background Color" description="Light Box Item Background Color" class="color"/>
+<field name="lightBoxMainBackgroundOpacity" type="text" default=".8" label="Light Box Main Background Opacity" description="Light Box Main Background Opacity"/>
+<field name="lightBoxInfoWindowBackgroundOpacity" type="text" default=".9" label="Light Box Info Window Background Opacity" description="Light Box Info Window Background Opacity"/>
+<field name="lightBoxBorderSize" type="text" default="4" label="Light Box Border Size" description="Light Box Border Size"/>
+<field name="lightBoxSlideShowDelay" type="text" default="4" label="Light Box Slide Show Delay" description="Light Box Slide Show Delay"/>
+<field name="rsplastwh" type="hidden" default="" />
+<field name="thumbnailBorderRadius" type="text" default="0" label="Thumbnail Border Radius" description="Thumbnail Border Radius" />
+<field name="showLightBoxInfoWindowByDefault" type="list" default="no" label="Show Light Box Info Window By Default" description="Show Light Box Info Window By Default">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="lightBoxVideoAutoPlay" type="list" default="no" label="Light Box Video Auto Play" description="Light Box Video Auto Play">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="lightBoxBorderRadius" type="text" default="0" label="Light Box Border Radius" description="Light Box Border Radius"/>
+<field name="startAtCategory" type="text" default="1" label="Start At Category on position" description="First category in the list have position 1, second 2 and so on."/>
+<field name="selectLabelName" type="text" default="CATEGORIES" label="Select categories button name" description="Name of the select categories button"/>
+<field name="showAllCategories" type="list" default="yes" label="Show All Categories" description="Show- All Categories button in the category list that shows items from all categories.">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+</field>
+<field name="allCategoriesLabel" type="text" default="All Categories" label="All Categories Label" description="All Categories Label"/>
+<field name="comboBoxPosition" type="list" default="topleft" label="Combo Box Position" description="Combo Box Position">
+	<option value="topleft">TopLeft</option>
+	<option value="topright">TopRight</option>
+</field>
+<field name="selctorBackgroundNormalColor" type="text" default="FFFFFF" label="Selector Background Normal Color" description="Selector Background Normal Color" class="color"/>
+<field name="selctorBackgroundSelectedColor" type="text" default="000000" label="Selector Background Selected Color" description="Selector Background Selected Color" class="color"/>
+<field name="selctorTextNormalColor" type="text" default="000000" label="Selector Text Normal Color" description="Selector Text Normal Color" class="color"/>
+<field name="selctorTextSelectedColor" type="text" default="FFFFFF" label="Selector Text Selected Color" description="Selector Text Selected Color" class="color"/>
+<field name="buttonBackgroundNormalColor" type="text" default="FFFFFF" label="Button Background Normal Color" description="Button Background Normal Color" class="color"/>
+<field name="buttonBackgroundSelectedColor" type="text" default="000000" label="Button Background Selected Color" description="Button Background Selected Color" class="color"/>
+<field name="buttonTextNormalColor" type="text" default="000000" label="Button Text Normal Color" description="Button Text Normal Color" class="color"/>
+<field name="buttonTextSelectedColor" type="text" default="FFFFFF" label="Button Text Selected Color" description="Button Text Selected Color" class="color"/>
+<field name="comboBoxShadowColor" type="text" default="000000" label="Combo Box Shadow Color" description="Combo Box Shadow Color" class="color"/>
+<field name="comboBoxHorizontalMargins" type="text" default="12" label="Combo Box Horizontal Margins" description="Combo Box Horizontal Margins"/>
+<field name="comboBoxVerticalMargins" type="text" default="12" label="Combo Box Vertical Margins" description="Combo Box Vertical Margins"/>
+<field name="comboBoxCornerRadius" type="text" default="0" label="Combo Box Corner Radius" description="Combo Box Corner Radius"/>
+	</fieldset>
+
+	</fields>
+</metadata>
