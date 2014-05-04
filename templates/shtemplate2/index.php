@@ -6,7 +6,8 @@ $this->direction = $doc->direction;
 //JHtmlBootstrap::loadCss(true, $this->direction);
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.min.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/base3.css');
-
+$doc->addStyleSheet('templates/'.$this->template.'/fancybox/jquery.fancybox.css'); 
+//$this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/template.css');
 $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/template_' . $this->params->get('farbauswahl') . '.css');
 
 ?>
@@ -15,7 +16,13 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 <head> 
 	<jdoc:include type="head" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="templates/shtemplate2/js/html5shiv.js"></script>
+  <script src="templates/shtemplate2/js/respond.min.js"></script>
+  <script src="templates/shtemplate2/js/css3-mediaqueries.js"></script>
+  <link rel="stylesheet" type="text/css" href="templates/shtemplate2/css/ie.css">
+<![endif]-->
 	<script>
 jQuery(document).ready(function(){
     var hiddenDiv = document.getElementById("login");
@@ -25,36 +32,43 @@ jQuery(document).ready(function(){
     jQuery('.item-121').hover( function(){ 
         hiddenDiv.style.display =  "block"},function(){ 
             hiddenDiv.style.display =  "none"}  );
-      
+      });
         
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47727230-1', 'smiley-homes.at');
+  ga('send', 'pageview');
+
+
    
 
 
-})
+
 </script>	
 </head>
 <body>
-
-<div class="container">
-  <div class="head-menu clearfix navbar-fixed-top" style="background-color: rgba(255,255,255,0.4)"> <div class="container">
-   <jdoc:include type="modules" name="position-0"  /> </div>   </div>
-	
+<div id="mainmenu" class="clearfix nav-fixed-bottom" style="background-color: rgba(255,255,255,0.9)"> 
+   <jdoc:include type="modules" name="position-0"  />   </div> 
+   
+<div class="container-fluid" >
  
- 
- 
+ <!--  
   
     <div id="menuspace"class=" row clearfix  ">  
 		
     </div>
 
- <!--  <div class="">
+<div class="">
     <div class="logo row clearfix  ">  
 		<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/smiley-homes-mit-schrift.png" class="img-responsive" alt="Smiley-homes Logo" />
     </div>
 </div> -->
     
       
-    <div class="row col-md10 col-md-offset-1 clearfix"> <!-- Reihe 4 -->
+    <div> <!-- Reihe 4 -->
 		
 		 <jdoc:include type="component" style="html5" />  <!-- Hauptbereich -->
 		
@@ -71,15 +85,17 @@ jQuery(document).ready(function(){
 	</div>
 
 
-<?php $doc->addScript('templates/'.$this->template.'/js/jquery-1.10.2.js'); ?>
+
 
 <?php $doc->addScript('templates/'.$this->template.'/js/jquery.nav.js'); ?>
 
 <?php $doc->addScript('templates/'.$this->template.'/js/jquery.scrollTo.js'); ?>
-<?php $doc->addScript('templates/'.$this->template.'/js/jquery.easing.1.3.js'); ?>
+
 <?php $doc->addScript('templates/'.$this->template.'/js/bootstrap.min.js'); ?>
 <?php $doc->addScript('templates/'.$this->template.'/js/collapse.js'); ?>
 <?php $doc->addScript('templates/'.$this->template.'/js/transition.js'); ?>
+<?php $doc->addScript('templates/'.$this->template.'/fancybox/jquery.fancybox.js'); ?>
+<?php $doc->addScript('templates/'.$this->template.'/js/sued3s.js'); ?>
 
 	  
 

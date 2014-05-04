@@ -1,0 +1,34 @@
+/* NOTE: lytebox-blue.css CREATED BY ALLWEBCO DESIGN 11/23/2008 */
+
+
+
+
+	/* NOTE: This is the image border. If you adjust this, also adjust the lytebox.js this.borderSize */
+
+	#lbMain img { border: 1px solid #000000; }
+
+	#lbOverlay.thme { background-color: #011D50; }
+
+	#lbOuterContainer.thme { border: 3px solid #5F89D8; background-color: #FFFFFF; }
+
+	#lbDetailsContainer.thme { border: 3px solid #5F89D8; border-top: none; background-color: #FFFFFF; }
+
+	#lbPrev2.thme, #lbNext2.thme, #lbSpacer.thme { color: #01379E; }
+
+	#lbPrev2_Off.thme, #lbNext2_Off.thme { color: #B7CAEE; }
+
+	#lbDetailsData.thme { color: #01379E; }
+
+	#lbClose.thme { background: url(blue_close.gif) no-repeat; }
+
+	#lbPlay.thme { background: url(blue_play.gif) no-repeat; }
+
+	#lbPause.thme { background: url(blue_pause.gif) no-repeat; }
+
+	#lbPrev.thme:hover, #lbPrev.thme:visited:hover { background: url(blue_prev.gif) left 15% no-repeat; }
+
+	#lbNext.thme:hover, #lbNext.thme:visited:hover { background: url(blue_next.gif) right 15% no-repeat; }
+
+
+
+

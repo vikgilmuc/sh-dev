@@ -1,4 +1,4 @@
-<?php defined('_JEXEC') or die; ?>
+			<?php defined('_JEXEC') or die; ?>
 
 
 
@@ -9,13 +9,14 @@
 <h1><?php echo JText::_(''); ?></h1>
 <table class="table-striped table-bordered" >
 	<tr>
-		<td><h3><?php echo JText::_('Wohnung'); ?></h3></td>
-		<td><h3><?php echo JText::_('Typ'); ?></h3></td>
-		<td><h3><?php echo JText::_('Ebene'); ?></h3></td>
-		<td><h3><?php echo JText::_('Meter'); ?></h3></td>
-		<td><h3><?php echo JText::_('Garten'); ?></h3></td>
-		<td><h3><?php echo JText::_('Balkon'); ?></h3></td>
-		<td><h3><?php echo JText::_('Terrasse'); ?></h3></td>
+		<td><h3 class="centriert"><?php echo JText::_('Wohnung'); ?></h3></td>
+		<td><h3 class="centriert"><?php echo JText::_('Typ'); ?></h3></td>
+		<td><h3 class="centriert"><?php echo JText::_('Grundis-')?><br/><?php echo JText::_('plan'); ?></h3></td>
+		<td><h3><?php echo JText::_('Stock'); ?></h3></td>
+		<td><h3 class="centriert"><?php echo JText::_('Qm'); ?></h3></td>
+		<td><h3><?php echo JText::_('Garten')?><br/><?php echo JText::_('/QM'); ?></h3></td>
+		<td><h3>Balkon<br/>/QM</h3></td>	
+		<td><h3>Terrasse<br/>/QM</h3></td>
 		<td><h3><?php echo JText::_('Frei'); ?></h3></td>
 	</tr>
 	
@@ -25,15 +26,22 @@
 		echo '<tr>';
 		echo '<td><p>' . $wohnung->name . '</p></td>';
 		echo '<td><p>' . $wohnung->typ . '</p></td>';
+		echo '<td>';
+		if (file_exists ('images/plaene/'.$wohnung->name.'.jpg')) {
+		echo '<p class="centriert"><a class="plan" href="images/plaene/'.$wohnung->name.'.jpg" rel="fancied">link</a>';
+		};
+		echo '</p></td>';
 		echo '<td><p>' . $wohnung->ebene . '</p></td>';
 		echo '<td><p>' . $wohnung->meter . '</p></td>';
-		echo '<td><p>';if($wohnung->G=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}echo'</p></td>';
-		echo '<td><p>';if($wohnung->B=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}echo'</p></td>';
-		echo '<td><p>';if($wohnung->T=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}echo'</p></td>';
+		//echo '<td><p>' . $wohnung->meter . '</p></td>';
+		echo '<td><p class="centriert">';if($wohnung->G=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}if($wohnung->G=='1'){echo($wohnung->garten_meter);}echo'</p></td>';
+		echo '<td><p class="centriert">';if($wohnung->B=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}if($wohnung->B=='1'){echo($wohnung->balkon_meter);}echo'</p></td>';
+	
+		echo '<td><p class="centriert">';if($wohnung->T=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}if($wohnung->T=='1'){echo($wohnung->terrasse_meter);}echo'</p></td>';
 		//echo '<td><p><a href='.(JURI::base()).'images/plaene/'. $wohnung->name .'.jpg>plan</a></p></td>';
 		//echo '<td><p><a href=' . $wohnung->name . '>fotos</a></td>';
-		echo '<td><p>';if($wohnung->frei=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}echo'</p></td>';
-		echo '</tr>';
+		echo '<td><p class="centriert">';if($wohnung->frei=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}echo'</p></td>';
+		echo '</tr>'; 
 	}
 	?>
 </h1>

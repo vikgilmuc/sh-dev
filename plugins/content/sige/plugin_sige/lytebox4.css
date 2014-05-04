@@ -1,0 +1,101 @@
+/* ------------------------------------------------------------	*/
+/*  NOTES:							*/
+/*	rev: 11/23/08 - LYTEBOX Ver 3.22a Created		*/
+/*	rev: 07/01/08 - black theme added by Allwebco		*/
+/*	rev: 07/01/08 - darkgreen theme added by Allwebco 	*/
+/*								*/
+/*  AVAILABLE THEMES:						*/
+/*	grey, red, green, blue, gold, darkgreen, black   	*/
+/*								*/
+/*  EDIT THE THEME COLOR IN THE NEXT LINE (use lowercase) 	*/
+/* ------------------------------------------------------------	*/
+
+
+
+@import url("lytebox/lytebox-blue.css");
+
+
+
+
+
+
+
+
+
+
+
+
+/* NOTE: MARGINS also edit the "lytebox.js" */
+
+#lbImageContainer, #lbIframeContainer { padding: 20px; padding-top: 20px; }
+
+#lbDetailsData { padding: 0px 20px; }
+
+
+
+
+#lbIframe {
+border: 0px solid #C0C0C0;
+}
+
+
+#lbOverlay { position: fixed; top: 0; left: 0; z-index: 99998; width: 100%; height: 500px; }
+
+
+
+#lbMain { position: absolute; left: 0; width: 100%; z-index: 99999; text-align: center; line-height: 0; }
+#lbMain a img { border: none; }
+
+
+#lbOuterContainer { position: relative; background-color: #FFFFFF; width: 200px; height: 200px; margin: 0 auto; }
+
+
+
+#lbDetailsContainer {	font: 11px Verdana, Helvetica, sans-serif; background-color: #FFFFFF; width: 100%; line-height: 1.4em;	overflow: auto; margin: 0 auto; }
+
+
+#lbLoading {
+	position: absolute; top: 45%; left: 0%; height: 32px; width: 100%; text-align: center; line-height: 0; background: url(lytebox/loading.gif) center no-repeat;
+}
+
+#lbHoverNav { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#lbImageContainer>#lbHoverNav { left: 0; }
+#lbHoverNav a { outline: none; }
+
+#lbPrev { width: 49%; height: 100%; background: transparent url(lytebox/blank.gif) no-repeat; display: block; left: 0; float: left; }
+
+	
+#lbNext { width: 49%; height: 100%; background: transparent url(lytebox/blank.gif) no-repeat; display: block; right: 0; float: right; }
+
+
+
+
+#lbPrev2, #lbNext2 { text-decoration: none; font-weight: bold; }
+
+
+	
+#lbPrev2_Off, #lbNext2_Off { font-weight: bold; }
+
+
+
+#lbDetails { width: 60%; float: left; text-align: left; }
+#lbCaption { display: block; font-weight: bold; }
+#lbNumberDisplay { float: left; display: block; padding-bottom: 1.0em; }
+#lbNavDisplay { float: left; display: block; padding-bottom: 1.0em; }
+
+
+#lbClose { width: 64px; height: 28px; float: right; margin-bottom: 1px; }
+
+
+
+#lbPlay { width: 64px; height: 28px; float: right; margin-bottom: 1px; }
+
+
+	
+#lbPause { width: 64px; height: 28px; float: right; margin-bottom: 1px; }
+
+
+
+
+
+
