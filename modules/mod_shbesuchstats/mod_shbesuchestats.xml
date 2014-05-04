@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension client="site" version="2.5.0" type="module">
+
+<name>Besuchenummer Modul</name>
+
+<author>Victor Gil</author>
+
+<creationDate>Mai 2014</creationDate>
+
+<copyright>Copyright (C) Victor Gil</copyright>
+
+<license>GNU General Public License version 3 or later</license>
+
+<authorEmail>victor@victorgil.name</authorEmail>
+
+<authorUrl>http://www.victorgil.name</authorUrl>
+
+<version>1.0</version>
+
+<description>Ein erstes einfaches Statistikmodul für die Komponente 'ShBesuche'</description>
+
+
+-<files>
+
+<filename module="mod_mythingsstats">mod_shbesuchestats.php</filename>
+
+<filename module="mod_mythingsstats">helper.php</filename>
+
+<filename module="mod_mythingsstats">tmpl/default.php</filename>
+
+</files>
+
+</extension>
