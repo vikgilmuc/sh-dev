@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>com_shbesuche</name>
+    <administration>
+        <menu img="class:component">besuche</menu>
+    </administration>
+</extension>
