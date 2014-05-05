@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="plugin" group="content">
+	<name>shbesuche</name>
+	<author>T??g, Maier-Stadtherr, Seradeil</author>
+	<creationDate>November 2011</creationDate>
+	<copyright>Franzis Verlag</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>tueting@time4mambo.de</authorEmail>
+	<authorUrl>www.time4mambo.de</authorUrl>
+	<version>0.1</version>
+	<description>Ein erstes ganz einfaches Plugin</description>
+
+	<files>
+		<filename plugin="mytitel">shbesucheliste.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>
