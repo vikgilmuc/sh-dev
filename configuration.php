@@ -14,7 +14,7 @@ class JConfig {
 	public $dbtype = 'mysql';
 	public $host = 'localhost';
 	public $user = 'u17958_sa10304';
-	public $password = 'DSpPcQu238fTMFUu';
+	public $password = 'SHuhUYRYf9DH4j2m'; 
 	public $db = 'db17958_smiley-homes';
 	public $dbprefix = 'lqstn_';
 	public $live_site = '';
@@ -29,7 +29,7 @@ class JConfig {
 	public $ftp_root = '';
 	public $ftp_enable = '0';
 	public $offset = 'UTC';
-	public $mailonline = '1';
+	public $mailonline = '1'; 
 	public $mailer = 'mail';
 	public $mailfrom = 'victor@victorgil.name';
 	public $fromname = 'smiley-homes.at';

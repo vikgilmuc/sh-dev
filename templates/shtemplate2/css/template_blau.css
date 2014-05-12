@@ -87,6 +87,9 @@ p{font-family: Lucida Sans Unicode; color: black; text-align: left;margin-bottom
 }
 
 #wohnungen p {margin-bottom: 0px;}
+#mainmenu .nav li {
+  float: left;
+}
 
 .fusszeile
 {
