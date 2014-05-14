@@ -13,8 +13,8 @@ class JConfig {
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
 	public $host = 'localhost';
-	public $user = 'u17958_sa10304';
-	public $password = 'SHuhUYRYf9DH4j2m'; 
+	public $user = 'root';
+	public $password = 'UVGL0001'; 
 	public $db = 'db17958_smiley-homes';
 	public $dbprefix = 'lqstn_';
 	public $live_site = '';
