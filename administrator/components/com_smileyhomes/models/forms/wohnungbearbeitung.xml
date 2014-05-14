@@ -15,13 +15,12 @@
 			default=""
 		/>
 		<field
-			name="meter"
-			type="text"
-			label="COM_SMILEYHOMES_WOHNUNGBEARBEITUNG_WOHNUNGMETER"
-			description="COM_SMILEYHOMES_WOHNUNGBEARBEITUNG_WOHNUNGMETER_BESCHR"
-			size="40"
-			class="inputbox validate-numeric"
-			default=""
+			name="frei"
+			type="checkbox"
+			label="frei"
+			description="frei"
+			value="1"
+			
 		/>
 	</fieldset>
 </form>

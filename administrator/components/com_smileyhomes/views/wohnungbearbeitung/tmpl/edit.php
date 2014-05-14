@@ -11,15 +11,16 @@ JHtml::_('behavior.tooltip'); // Tooltips in Kästchen anzeigen
 <form action="<?php echo JRoute::_('index.php?option=com_smileyhomes&layout=edit&id='.(int) $this->wohnung->id); ?>" method="post" name="adminForm" id="smileyhomes-form">
 
 	<fieldset>
-		<legend><?php echo JText::_( 'COM_SMILEYHOMES_WOHNUNGBEARBEITUNG_LEGENDE' ); ?></legend>	
+		<legend><?php echo JText::_( 'Wohnung Bearbeitung' ); ?></legend>	
 		<ul>
 			<li>
 				<?php echo $this->form->getLabel('name'); ?>
 				<?php echo $this->form->getInput('name'); ?>
 			</li>
 			<li>
-				<?php echo $this->form->getLabel('meter'); ?>
-				<?php echo $this->form->getInput('meter'); ?>
+			    <input type="hidden" name="jform[frei]" value="0">
+				<?php echo $this->form->getLabel('frei'); ?>
+				<?php echo $this->form->getInput('frei'); ?>
 			</li>	
 		</ul>
 	</fieldset>
