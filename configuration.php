@@ -14,7 +14,11 @@ class JConfig {
 	public $dbtype = 'mysql';
 	public $host = 'localhost';
 	public $user = 'root';
+<<<<<<< HEAD
 	public $password = 'UVGL0001';
+=======
+	public $password = 'UVGL0001'; 
+>>>>>>> master
 	public $db = 'db17958_smiley-homes';
 	public $dbprefix = 'lqstn_';
 	public $live_site = '';
