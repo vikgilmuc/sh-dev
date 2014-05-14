@@ -16,6 +16,10 @@ JHtml::_('behavior.multiselect');
 				<th><?php echo JText::_('Wohnung'); ?></th>
 				<th><?php echo JText::_('Meter'); ?></th>
 				<th><?php echo JText::_('ID'); ?></th>
+				<th> 
+				  <?php echo JText::_('frei'); ?>
+				    
+				</th>
 			</tr>
 		</thead>
 
@@ -34,6 +38,9 @@ JHtml::_('behavior.multiselect');
 					</td>
 					<td>
 						<?php echo $wohnung->id; ?>
+					</td>
+					<td>
+						<?php echo $wohnung->frei; ?>
 					</td>
 				</tr>
 			<?php endforeach; ?>

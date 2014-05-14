@@ -16,7 +16,7 @@ class SmileyhomesViewWohnungbearbeitung extends JViewLegacy
 		// Werkzeugleiste einrichten:
 		JFactory::getApplication()->input->set('hidemainmenu', true);
 		$isNew = ($this->wohnung->id == 0);
-		JToolBarHelper::title($isNew ? JText::_('COM_SMILEYHOMES_FILMBEARBEITUNG_TITEL_NEW') : JText::_('COM_SMILEYHOMES_FILMBEARBEITUNG_TITEL_EDIT'));
+		JToolBarHelper::title($isNew ? JText::_('neue Wohnung') : JText::_('Wohnung bearbeitung'));
 		JToolBarHelper::save('wohnungbearbeitung.save');
 		JToolBarHelper::cancel('wohnungbearbeitung.cancel', $isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE');
 		
