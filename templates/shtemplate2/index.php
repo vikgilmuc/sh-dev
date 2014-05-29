@@ -5,11 +5,11 @@ $this->direction = $doc->direction;
 //JHtml::_('bootstrap.framework');
 //JHtmlBootstrap::loadCss(true, $this->direction);
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.min.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/base3.css');
-$doc->addStyleSheet('templates/'.$this->template.'/fancybox/jquery.fancybox.css'); 
-//$this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/template.css');
-$this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/template_' . $this->params->get('farbauswahl') . '.css');
 
+$doc->addStyleSheet('templates/'.$this->template.'/fancybox/jquery.fancybox.css'); 
+$this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/template.css');
+$this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/template_' . $this->params->get('farbauswahl') . '.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/base3.css');
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
@@ -32,6 +32,12 @@ jQuery(document).ready(function(){
     jQuery('.item-121').hover( function(){ 
         hiddenDiv.style.display =  "block"},function(){ 
             hiddenDiv.style.display =  "none"}  );
+      
+jQuery('.nav a').on('click', function(){
+    jQuery(".navbar-toggle").click();
+});
+
+      
       });
         
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,62 +49,60 @@ jQuery(document).ready(function(){
   ga('send', 'pageview');
 
 
-   
-
-
+  
 
 </script>	
+
+
 </head>
 <body>
-<div id="mainmenu" class="clearfix nav-fixed-bottom" style="background-color: rgba(255,255,255,0.9)"> 
-   <jdoc:include type="modules" name="position-0"  />   </div> 
    
-<div class="container-fluid" >
+    <!-- Reihe 4 -->
+   
+    <nav id="mainmenu" class="clearfix nav-fixed-bottom"  role="navigation"> 
+        <div id="padre" class="container-fluid">
+        <div class="navbar-header">
+         <button id="buto" type="button" style="background-color: #FFFFFF"  class="btn navbar-toggle" data-toggle="collapse" data-parent="#padre" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse" style="background-color: rgba(255,255,255,0.8)" >
+            <jdoc:include type="modules" name="position-0"  />   
+        </div>  
+        </div>
+   </nav>  
+    <div class="container-fluid" >
  
- <!--  
-  
-    <div id="menuspace"class=" row clearfix  ">  
-		
-    </div>
-
-<div class="">
-    <div class="logo row clearfix  ">  
-		<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/smiley-homes-mit-schrift.png" class="img-responsive" alt="Smiley-homes Logo" />
-    </div>
-</div> -->
-    
-      
-    <div> <!-- Reihe 4 -->
-		
-		 <jdoc:include type="component" style="html5" />  <!-- Hauptbereich -->
-		
-		
-		
-    </div>
-    
+   
+        <div> <!-- Reihe 4 -->
+    				 <jdoc:include type="component" style="html5" />  <!-- Hauptbereich -->
+    	
+        </div>
+        
     
    
-<div id="login"> <jdoc:include type="modules" name="position-6" style="kinostil" titelebene="3" /> </div> 
-	</div>   
-   
-<div class="fusszeile"> <jdoc:include type="modules" name="position-7" style="kinostil" titelebene="3" /> </div> 
-	</div>
+    <div id="login"> <jdoc:include type="modules" name="position-6" style="kinostil" titelebene="3" /> </div> 
+    	</div>   
+       
+    <div class="fusszeile"> <jdoc:include type="modules" name="position-7" style="kinostil" titelebene="3" /> </div> 
+    	</div>
+    
+    
+    
+    <?php $doc->addScript('templates/'.$this->template.'/js/collapse.js'); ?>
+    <?php $doc->addScript('templates/'.$this->template.'/js/transition.js'); ?>
+    <?php $doc->addScript('templates/'.$this->template.'/js/jquery.nav.js'); ?>
+    <?php $doc->addScript('templates/'.$this->template.'/js/jquery.scrollTo.js'); ?>
+    <?php $doc->addScript('templates/'.$this->template.'/fancybox/jquery.fancybox.js'); ?>
+    <?php $doc->addScript('templates/'.$this->template.'/js/sued3s.js'); ?>
+    
+        
 
-
-
-
-<?php $doc->addScript('templates/'.$this->template.'/js/jquery.nav.js'); ?>
-
-<?php $doc->addScript('templates/'.$this->template.'/js/jquery.scrollTo.js'); ?>
-
-<?php $doc->addScript('templates/'.$this->template.'/js/bootstrap.min.js'); ?>
-<?php $doc->addScript('templates/'.$this->template.'/js/collapse.js'); ?>
-<?php $doc->addScript('templates/'.$this->template.'/js/transition.js'); ?>
-<?php $doc->addScript('templates/'.$this->template.'/fancybox/jquery.fancybox.js'); ?>
-<?php $doc->addScript('templates/'.$this->template.'/js/sued3s.js'); ?>
-
-	  
-
-	
 </body>
 </html>

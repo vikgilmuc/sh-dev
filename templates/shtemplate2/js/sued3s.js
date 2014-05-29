@@ -3,29 +3,30 @@
 jQuery(document).ready(function(){
 
 
-jQuery('#mainmenu').onePageNav({
+jQuery('#bs-example-navbar-collapse-1').onePageNav({
     currentClass: 'active',
     changeHash: false,
     scrollSpeed: 750,
-    scrollOffset: 150,
+    scrollOffset: 0,
     scrollThreshold: 0.5,
-    filter: '',
+    filter: ':not(.external)',
     easing: 'swing',
     begin: function() {
         //I get fired when the animation is starting
     },
     end: function() {
-        //I get fired when the animation is ending
+        
     },
     scrollChange: function($currentListItem) {
         //I get fired when you enter a section and I pass the list item of the section
     }
 })
 
-jQuery('[title="impressum"]').unbind('click');
+
+//jQuery('[title="impressum"]').unbind('click');
 	
 jQuery("a.plan").fancybox();
-	
+
 
 jQuery('.plan').attr("rel","fancied").fancybox({
   afterShow: function(){

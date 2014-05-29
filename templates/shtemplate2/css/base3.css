@@ -1,29 +1,91 @@
 
+@font-face {
+    font-family: copperplate_gothic_boldRg;
+    src: url('../fonts/coprgtb-webfont.eot');
+    src: url('../coprgtb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/coprgtb-webfont.woff') format('woff'),
+         url('../fonts/coprgtb-webfont.ttf') format('truetype'),
+         url('../fonts/coprgtb-webfont.svg#copperplate_gothic_boldRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-#home {background:rgba(100,100,100,0.5); width:100%; height:100%; position: relative ; }
-#home img{ max-height: 600px ; }
-#home h2{ font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 180%; color: #527ea1;font-weight: 900; text-shadow: 1px 1px #000000; position: absolute; z-index: 1;top: 200px; left:40%; text-align: left; width:60%; background-color: rgba(255,255,255,0.4)}
-#home h3{ font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 200%; color: white;font-weight: 900; text-shadow: 2px 2px #000000; position: absolute; top: 75%; left:45%;  text-align: left}
-#home:after {clear: both}
-.a100 {height: 100%; overflow: hidden} 
-#homeheader{ position: fixed; top:0px; height: 15%; background-color:rgba(130,130,130,0.5); width: 100%;  z-index: 6; display: block	}
-#homenavigator { position: absolute; top:100px; height: 100%; background-color:rgba(130,130,130,0.5);  z-index: 6; 	}
-.panel { width:100%; float:left; position:relative; overflow:hidden; }
+}
+
+@font-face {
+    font-family: copperplate_gothic_lightRg;
+    src: url('../fonts/coprgtl-webfont.eot');
+    src: url('../fonts/coprgtl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/coprgtl-webfont.woff') format('woff'),
+         url('../fonts/coprgtl-webfont.ttf') format('truetype'),
+         url('../fonts/coprgtl-webfont.svg#copperplate_gothic_lightRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*--------------General -------------*/
+
+h1 {
+	font-family: Copperplate, "Copperplate Gothic Bold", fantasy; 
+	color: black; 
+	text-align: center; }
+h2  {
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+ 	color: black; 
+ 	text-align: center; 
+ 	margin-bottom: 50px}
+ 	
+h3 {
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	color: black;
+	text-align: left}
+
+p{
+	font-family: Lucida Sans Unicode; color: black; text-align: left;margin-bottom: 50px}
 
 
-ul {display:inline-block;list-style-type: none; margin: -0hmin;}
 
-#homeheader li {position:relative;background-color:#EEEEEE; }
+.container-fluid {
+  /*----to avoid border on backgound -----*/
+	padding-left: 0px;
+	padding-right:0px}
 
-ul ul{
-display:none;
-position:absolute;
-width:200px;
-margin:0;
-top:100%;
+.row{
+   margin-right: 0px; 
 }
 
 
+
+
+/*------------menu ----------------*/
+
+
+.nav {
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+	font-size:1.5em; }
+
+.nav a{
+	color:black;}
+
+.nav > li > a {
+  display: inline;
+  padding: 10px 15px;
+  position: relative;
+  float:right;
+ }
+ 
+.navbar-fixed-bottom .nav li {
+  float: right;}
+
+.navbar-toggle {
+	border: 1px solid black; }
+
+.navbar-toggle .icon-bar {
+    background-color: black ;}
+
+#mainmenu .nav li {
+  float: left;
+}
 #mainmenu {
 position: fixed;
 bottom: 0px;
@@ -37,58 +99,245 @@ margin:0;
 top:100%;
 
 }
-#homeheader li li {
-float:none;
-background-color:#CCCCCC;
+#mainmenu li.active a {
+  background-color: #F9EB52;
 }
+
 #mainmenu {float: left}
 
 #mainmenu  ul ul{float: left}
 
+/*------------sh-manifest--------*/
 
-#homePanels {background-color:rgba(130,130,0,0.5)}
-.use-hove li:hover ul   {
-display:block;
-}
-#parallax-bg1 .panel { width:100%; float:left; position:relative; overflow:visible; }
-#parallax-bg1 .panel .info { width:100%; position:absolute; top:250px }
-#parallax-bg1 .panel .infoContent { width:100%; text-align:center; vertical-align:middle; display:table-cell; }
+	/*-------------to solve IE7 backgoundimage--------*/
+	#bg { 
+		display:none }
+	.bgwidth { 
+		width: 100%; }
+	.bgheight { 
+		height: 105%; }
 
-#parallax-bg1 {
-	z-index: 3;
+
+
+.item-page li {list-style-image: url(../images/smiley-homes-list.png)}
+
+#sh-manifest{
+	position:relative
+	font-family: Helvetica,Arial,sans-serif;	
+	background-image:url(../images/background.png);
+	background-position: 50% 0px;
+	background-repeat:no-repeat;
+	-webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;  }
+    
+    #sh-manifest h3 {
+		vertical-align:middle;}
+
+#logo-img {margin-top: 15px;}
+
+#logo-img {width:20%; margin-right:auto; margin-left:auto; }
+
+.email a:link, .email a:visited{color:black}
+.logo {padding: 0px}
+
+
+/*------------projekt Zirl---------------*/
+
+
+#projekt_zirl img {
+	width:100%}
+
+
+#projekt_zirl h2{ 
+	font-family: copperplate_gothic_lightRg; 
+	font-size: 4em; 
+	color: #527ea1;
+	font-weight: 900; 
+	text-shadow: 1px 1px #000000; 
+	text-align: left;  
+	background-color: rgba(255,255,255,0.4)}
+
+
+#projekt_zirl { 
 	position: relative;
-	left: 50%; /* align left edge with center of viewport */
-	top: 0;
-	height:100%;
-	width: 100%;
-	margin-left: -50%; 
-	overflow: hidden;/* move left by half element's width */
-	}
-/*#parallax-bg1 #home img:first-child {display: block}	*/
-#parallax-bg1 ul { position:absolute; bottom:30px; left:50%; } 
-#parallax-bg1 ul li { width:8px; height:8px; float:left; margin:0 3px; } 
-#parallax-bg1 ul a { width:8px; height:8px; display:block; color:#fff; background:url(img/slider.png) no-repeat 0 -32px; text-indent:-9999px; } 
-#parallax-bg1 ul a:hover, #parallax-bg1 ul a.current { background-position:-14px -32px; } 
+	top: 20px}
 
-/* ZONES - Full Width - Outside the container */
-/* Tip: Add your backgrounds here for a full width background */
-.noceda-zone-wrapper {} /* target all zones */
-#topbar-zone {}
-#header-zone {background: lightblue;
-position: relative;}
-#header-nav-zone {background: rgba(26,188,156,0.5); text-align: center ; display: inline;
-position: absolute;
-right: 0px;
-top: 100px;
-width: 100%;
-height: 45px;
-z-index: 3;
-font-family:"Gill Sans Font Family",Gill Sans Ultra Bold; font-size: 24px; font-weight: 900; color: white;
+
+/*-------wohnungen ---------------*/
+
+
+
+#wohnungen p {margin-bottom: 0px;}
+
+.centriert {text-align: center}
+
+#wohnungen h3 {}
+
+
+/*--------kontakt ---------------*/
+
+
+
+#kontakt  img {width:100%}
+
+
+
+/*------others-------*/
+
+
+#login {
+	position: fixed; 
+	bottom: 50px; 
+	right: 100px; 
+	background-color: white ; 
+	display: none}
+
+#login:hover {
+	display: block}
+.form-horizontal .control-label {
+  text-align: left;}
+
+
+.fusszeile{
+      clear: both;
+      text-align: left;
+      font-size: small;
+      font-style: italic;
+      color: black;
 }
-#home-header a{color: white;}
-#header-nav-zone ul {display: inline-block}
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+
+/*------------------MEDIAS ---------------------*/ 
+
+/*-----------------HANDY-----*/
+@media only screen and (max-width: 37.5em) { 
+	
+	
+	#logo-img {
+		width:25%; 
+		margin-right:auto; 
+		margin-left:auto; }
+	 
+	#projekt_zirl h2{ 
+		font-family: copperplate_gothic_lightRg; 
+		font-size: 1em; color: #527ea1;
+		font-weight: 900; 
+		text-shadow: 1px 1px #000000; 
+		text-align: left;  
+		background-color: rgba(255,255,255,0.4);
+		margin-left: 20px;}
+		
+	#sh-manifest h1 {
+		font-size: 2em;
+		line-height: 1em;}
+		
+	#sh-manifest h3 {
+		margin-top: 10px;
+		font-size: 1em;
+		line-height: 1em;
+		}
+		
+	.item-page li {list-style:initial}	
+		
+	 .no-handy, #sh-manifest  p {
+		display:none;}
+		
+	#wohnungen h3{
+		font-size: 0.8em}
+		
+	#buto {
+		position:relative;
+		right: 10px;
+	}
+		
+		
+	
+			
+}
+		
+/*------------------------Ipad----------------*/	
+@media only screen and  (min-width: 37.5em) and (max-width: 61.18em) { 
+
+body{
+	font-size:0.938em;}
+
+#logo-img {width:25%; margin-right:auto; margin-left:auto; }
+
+#projekt_zirl h2{ font-family: copperplate_gothic_lightRg; font-size: 160%; color: #527ea1;font-weight: 900; text-shadow: 1px 1px #000000; text-align: left;  background-color: rgba(255,255,255,0.4)}
+
+}
+
+/*---------normal screen  ---------------*/
+
+@media only screen and (min-width: 61.18em) and (max-width:  74.93em) { 
+
+	#logo-img {width:25%; margin-right:auto; margin-left:auto; }
+	
+	#projekt_zirl h2{ 
+	
+	font-family: copperplate_gothic_lightRg; 
+	font-size: 160%; 
+	color: #527ea1;
+	font-weight: 900; 
+	text-shadow: 1px 1px #000000; 
+	position: absolute; 
+	top: 70%; 
+	left:40%; 
+	text-align: left; 
+	width:60%; 
+	background-color: rgba(255,255,255,0.4)}
+
+
+ }
+
+/*------------------------big screens-----------------*/
+ 
+
+@media only screen and (min-width:  1199px) { 
+
+	#logo-img {width:25%; margin-right:auto; margin-left:auto; }
+	#projekt_zirl h2{ font-family: copperplate_gothic_lightRg; 
+	font-size: 160%; 
+	color: #527ea1;
+	font-weight: 900; 
+	text-shadow: 1px 1px #000000; 
+	position: absolute; top: 70%; 
+	left:40%; 
+	text-align: left; 
+	width:60%; 
+	background-color: rgba(255,255,255,0.4)}
+}
+
+/*----------------------print -------------------*/
+
+@media only print {
+		  a:link:after, a:visited:after {    
+		  content: "  ";    }
+		   body
+		{
+		   
+				background-image:url(../images/background.png);
+				background-position: 50% 0px;
+				background-repeat:no-repeat;
+				-webkit-background-size: auto 1938px;
+		  -moz-background-size: auto 1938px;
+		  -o-background-size: auto 1938px;
+		  background-size: auto 1938px;  **/
+		
+		}
+		#bg { display: none}
+		.item-page li {list-style: disc}
+		h2  {font-family: Arial, Helvetica, sans-serif;
+		font-size: 3vw; color: black; text-align: center; margin-bottom: 50px}
+		h3 {font-family: Arial, Helvetica, sans-serif;
+		font-size: 2vw; color: black;text-align: left}
+
+}
+
+
+
+
+
 
 
