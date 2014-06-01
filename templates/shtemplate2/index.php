@@ -35,6 +35,8 @@ jQuery(document).ready(function(){
       
 jQuery('.nav a').on('click', function(){
     jQuery(".navbar-toggle").click();
+
+
 });
 
       
