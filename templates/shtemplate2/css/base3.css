@@ -322,6 +322,12 @@ ul.socials li  {
 
 body{
 	font-size:0.938em;}
+	
+ul.socials li  {
+    display: block;
+    margin: 0 0.4em 0 0;
+    padding: 0;
+	}
 
 #logo-img {width:25%; margin-right:auto; margin-left:auto; }
 
