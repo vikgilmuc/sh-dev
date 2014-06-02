@@ -184,8 +184,44 @@ top:100%;
 
 
 
+
+/*--------------socials -------------*/ 
+
+ul.socials  {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+ul.socials li  {
+    display: inline-block;
+    margin: 0 0.4em 0 0;
+    padding: 0;
+}
+
+.socials i{
+    text-indent: -9999px;
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+.sprite {
+    background: url('../gfx/social-sprite.png') no-repeat 0px 0px;
+}
+
+.fb {background-position: 0px -50px;}
+.fb:hover {background-position: 0px 0px;}
+.tw {background-position: -50px -50px;}
+.tw:hover {background-position: -50px 0px;}
+.go {background-position: -100px -50px;}
+.go:hover {background-position: -100px 0px;}
+
+
 /*------others-------*/
 
+.navbar-brand {
+	height:0px}
 
 #login {
 	position: fixed; 
@@ -250,7 +286,32 @@ top:100%;
 		position:relative;
 		right: 10px;
 	}
-		
+	
+	ul.socials li  {
+    display: block;
+    margin: 0 0.4em 0 0;
+    padding: 0;
+	}
+	.socials i{
+	    text-indent: -9999px;
+	    width: 32px;
+	    height: 32px;
+	    display: block;
+	}
+	
+			
+		.sprite {
+	    background: url('../gfx/social-sprite-small.png') no-repeat 0px 0px;
+	}
+	
+	.fb {background-position: 0px -33px;}
+	.fb:hover {background-position: 0px 0px;}
+	.tw {background-position: -33px -33px;}
+	.tw:hover {background-position: -33px 0px;}
+	.go {background-position: -66px -33px;}
+	.go:hover {background-position: -66px 0px;}
+
+
 		
 	
 			
