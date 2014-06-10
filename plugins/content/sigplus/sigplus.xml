@@ -81,6 +81,7 @@
 					<option value="boxplus.hover">SIGPLUS_BOXPLUS_HOVER</option>
 					<option value="fancybox">SIGPLUS_FANCYBOX</option>
 					<option value="milkbox">SIGPLUS_MILKBOX</option>
+					<option value="imagelightbox">SIGPLUS_IMAGELIGHTBOX</option>
 					<!--
 					<group label="SIGPLUS_PRETTYPHOTO">
 						<option value="prettyphoto/facebook">SIGPLUS_PRETTYPHOTO_DEFAULT</option>
