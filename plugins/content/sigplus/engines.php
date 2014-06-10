@@ -179,6 +179,7 @@ class SIGPlusEngineServices {
 	}
 
 	public function getLightboxEngine($lightboxengine) {
+	    
 		return $this->getEngine('lightbox', $this->lightboxengines, $lightboxengine);
 	}
 
@@ -430,7 +431,7 @@ class SIGPlusEngine {
 		$engineclass = 'SIGPlus'.$engineclassname.'Engine';
 		$enginedir = dirname(__FILE__).DIRECTORY_SEPARATOR.'engines';
 		if (is_file($enginefile = $enginedir.DIRECTORY_SEPARATOR.$enginetype.'.'.$engine.'.php') || is_file($enginefile = $enginedir.DIRECTORY_SEPARATOR.$engine.'.php')) {
-			require_once $enginefile;
+		require_once $enginefile;
 		}
 		if (class_exists($engineclass)) {
 			return new $engineclass($params);
@@ -484,6 +485,7 @@ class SIGPlusLightboxEngine extends SIGPlusEngine {
 	* @remark When overriding this method, the base method should normally be called.
 	*/
 	protected function addCommonScripts() {
+	    echo("addcommonscripts");
 		$this->addScript('/plugins/content/sigplus/engines/'.$this->getIdentifier().'/js/'.$this->getScriptFilename());
 	}
 
