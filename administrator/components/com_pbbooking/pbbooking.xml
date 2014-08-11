@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+<name>com_pbbooking</name>
+<!-- The following elements are optional and free of formatting constraints -->
+ 
+<creationDate>2014-03-21</creationDate>
+<author>Eric Fernance</author>
+<authorEmail>info@purplebeanie.com</authorEmail>
+<authorUrl>http://www.purplebeanie.com</authorUrl>
+<copyright>Copyright Info</copyright>
+<license>License Info</license>
+<!--  The version string is recorded in the components table -->
+<version>2.4.0.10</version>
+<!-- The description is optional and defaults to the name -->
+<description>A simple calendaring and booking component that includes calendar integration. Free Version.  Commercial, pro version is also available with more options.  Check my web site for more information.  http://www.purplebeanie.com.</description>
+<update>
+	<schemas>
+		<schemapath type="mysql">sql/updates/mysql</schemapath>
+	</schemas>
+</update>
+<scriptfile>script.php</scriptfile>
+
+<!-- Site Main File Copy Section -->
+<!-- Note the folder attribute: This attribute describes the folder
+  to copy FROM in the package to install therefore files copied
+  in this section are copied from /site/ in the package -->
+<files folder="front">
+	<filename>calendars/publish.php</filename>
+	<filename>controller.php</filename>
+	<folder>helpers</folder>
+	<filename>images/calendar.png</filename>
+	<filename>images/cross.png</filename>
+	<filename>index.html</filename>
+	<filename>models/index.html</filename>
+	<filename>models/calendar.php</filename>
+	<filename>models/event.php</filename>
+	<filename>pbbooking.php</filename>
+	<filename>user_view.css</filename>
+	<folder>views</folder>
+	<filename>router.php</filename>
+	<folder>scripts</folder>
+	<folder>pbframe</folder>
+</files> 
+
+<languages>
+	<language tag="en-GB">languages/front/en-GB.com_pbbooking.ini</language>
+</languages>
+
+	 
+<administration>
+	<!-- Administration Menu Section -->
+	<menu>com_pbbooking</menu>
+	<submenu>
+		<menu controller="treatment" task="display">COM_PBBOOKING_SUB_MENU_SERVICES</menu>
+		<menu controller="calendar" task="display">COM_PBBOOKING_SUB_MENU_MANAGE_CALENDARS</menu>
+		<menu controller="configuration" task="edit">COM_PBBOOKING_SUB_MENU_MANAGE_CONFIGURATION</menu>
+		<menu controller="customfields" task="display">COM_PBBOOKING_SUB_MENU_MANAGE_CUSTOM_FIELDS</menu>
+		<menu controller="manage" task="display">COM_PBBOOKING_SUB_MENU_MANAGE_DIARIES</menu>
+		<menu controller="manage" task="blockdays">COM_PBBOOKNG_TRADING_HOURS_HOLIDAYS</menu>
+	</submenu>
+
+	<!-- Administration Main File Copy Section -->
+	<files folder="admin">
+		<filename>controller.php</filename>
+		<folder>controllers</folder>
+		<folder>images</folder>
+		<filename>index.html</filename>
+		<filename>install.sql</filename>
+		<filename>pbbooking.php</filename>
+		<folder>scripts</folder>
+		<filename>uninstall.sql</filename>
+		<folder>views</folder>
+		<folder>sql</folder>
+		<folder>assets</folder>
+		<folder>css</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">languages/admin/en-GB.com_pbbooking.ini</language>
+		<language tag="en-GB">languages/admin/en-GB.com_pbbooking.sys.ini</language>
+	</languages>
+
+</administration>
+
+
+<install>
+	<sql>
+		<file charset="utf8" driver="mysql">sql/install.sql</file>
+	</sql>
+</install>
+
+<uninstall>
+	<sql>
+		<file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+	</sql>
+</uninstall>
+
+
+</extension>

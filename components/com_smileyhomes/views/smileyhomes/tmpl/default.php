@@ -34,13 +34,13 @@
 		echo '<td><p>' . $wohnung->ebene . '</p></td>';
 		echo '<td><p>' . $wohnung->meter . '</p></td>';
 		//echo '<td><p>' . $wohnung->meter . '</p></td>';
-		echo '<td><p class="centriert">';if($wohnung->G=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}if($wohnung->G=='1'){echo($wohnung->garten_meter);}echo'</p></td>';
-		echo '<td><p class="centriert">';if($wohnung->B=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}if($wohnung->B=='1'){echo($wohnung->balkon_meter);}echo'</p></td>';
+		echo '<td><p class="centriert">';if($wohnung->G=='1'){echo'<img src='.(JURI::base()).'images/tick.png>';}if($wohnung->G=='1'){echo($wohnung->garten_meter);}echo'</p></td>';
+		echo '<td><p class="centriert">';if($wohnung->B=='1'){echo'<img src='.(JURI::base()).'images/tick.png>';}if($wohnung->B=='1'){echo($wohnung->balkon_meter);}echo'</p></td>';
 	
-		echo '<td><p class="centriert">';if($wohnung->T=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}if($wohnung->T=='1'){echo($wohnung->terrasse_meter);}echo'</p></td>';
+		echo '<td><p class="centriert">';if($wohnung->T=='1'){echo'<img src='.(JURI::base()).'images/tick.png>';}if($wohnung->T=='1'){echo($wohnung->terrasse_meter);}echo'</p></td>';
 		//echo '<td><p><a href='.(JURI::base()).'images/plaene/'. $wohnung->name .'.jpg>plan</a></p></td>';
 		//echo '<td><p><a href=' . $wohnung->name . '>fotos</a></td>';
-		echo '<td><p class="centriert">';if($wohnung->frei=='1'){echo'<img src='.(JURI::base()).'images/tick.gif>';}echo'</p></td>';
+		echo '<td><p class="centriert">';if($wohnung->frei=='1'){echo'<img src='.(JURI::base()).'images/tick.png>';}echo'</p></td>';
 		echo '</tr>'; 
 	}
 	?>
