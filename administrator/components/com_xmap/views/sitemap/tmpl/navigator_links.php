@@ -12,7 +12,7 @@ header('Content-type: text/xml');
 
 $name = JRequest::getCmd('e_name');
 ?>
-<?xml version="1.0" encoding="UTF-8" ?>
+<xml version="1.0" encoding="UTF-8" ?>
 <nodes>
 <?php foreach ($this->list as $node) {
     $load = 'index.php?option=com_xmap&amp;task=navigator-links&amp;sitemap='.$this->item->id.'&amp;e_name='.$name.(isset($node->id)?'&amp;Itemid='.$node->id:'').(isset($node->link)?'&amp;link='.urlencode($node->link):'').'&amp;tmpl=component';

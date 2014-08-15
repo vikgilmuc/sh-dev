@@ -239,6 +239,9 @@ components/com_weblinks/*
 components/com_wrapper/*
 components/index.html
 images/banners/*
+images/galerie/*
+images/plaene/*
+images/wohnungen/*
 images/sampledata/*
 images/joomla*
 images/index.html

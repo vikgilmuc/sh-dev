@@ -1,0 +1,1 @@
+alter table `#__pbbooking_treatments` modify `name` varchar(512);
