@@ -7,7 +7,7 @@ jimport('joomla.application.component.controller');
 $controller = JControllerLegacy::getInstance('shbesuche');
 $config = JFactory::getConfig();
 $app= JFactory::getApplication();
-//$input = $app->input;
+$input = $app->input;
 define('SHBESUCHE_TIMEZONE',$config->get('offset')); 
 //$controller->execute($input->get('task'));
 
