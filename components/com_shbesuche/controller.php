@@ -24,7 +24,7 @@ class ShBesucheController extends JControllerLegacy{
         $locale = $language->getLocale();   
            
        $str_locale = preg_replace(array('/-/','/\.utf8/'),array('_',''),$locale[0]);
-       echo $str_locale; 
+       
        // setlocale(LC_ALL,$str_locale);  
 
        // Pbdebug::log_msg('Joomla offset = '.$config->get('offset').' PBBooking timezone = '.$this->config->timezone,'com_pbbooking');   
