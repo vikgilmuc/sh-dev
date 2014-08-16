@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+    <data>
+        <mobileSettings>
+            <currencySymbol>$</currencySymbol>
+            <width>710</width>
+            <height>630</height>
+            <containerid>gal0</containerid>
+            <heightManual></heightManual>
+            <mheight1></mheight1>
+            <mheight2></mheight2>
+            <mheight3></mheight3>
+            <mheight4></mheight4>
+        </mobileSettings>
+        <settings><background>
+        <color code="#FFFFFF" alpha="1" />	</background><viewer>
+        <align_image_in_fullscreen>center</align_image_in_fullscreen>
+        <base><color code="#cccccc" alpha="1" /></base>
+            <effect>
+                <type>1</type>
+                <time>2</time>
+                <closingType>default</closingType>
+                    <preloader>
+                        <color code="#202020" alpha="1" />
+                    </preloader>
+            </effect>
+
+            <description position="top">
+
+                    <effect>1</effect>
+
+                    <base>
+                        <color code="#020202" alpha="0.7" />
+                    </base>
+
+                    <text>
+                        <size>12</size>
+                        <color code="#FFFFFF" alpha="1" />
+                    </text>
+            </description>
+
+            <priceTag enabled="yes">
+
+                    <tag width="120" height="120">http://smiley-homes.at/components/com_dreamworkgallery/price_images/flower_green.png</tag>
+
+                    <position>BL</position>
+
+                    <symbol>$</symbol>
+
+                    <label>
+                        <size>20</size>
+                        <color code="#FFFFFF" alpha="1" />
+                    </label>
+
+                </priceTag><controls position="bottom" show="true">
+
+                    <base>
+                        <color code="#524B46" alpha="0.75" />
+                    </base>
+
+                    <arrow>
+
+                        <base>
+                            <up>
+                                <color code="#FBFBFB" alpha="0" />
+                            </up>
+                            <over>
+                                <color code="#FBFBFB" alpha="0.6" />
+                            </over>
+                            <down>
+                                <color code="#FBFBFB" alpha="0.6" />
+                            </down>
+                        </base>
+
+                        <arrow>
+                            <up>
+                                <color code="#FBFBFB" alpha="1" />
+                            </up>
+                            <over>
+                                <color code="#020202" alpha="1" />
+                            </over>
+                            <down>
+                                <color code="#020202" alpha="1" />
+                            </down>
+                        </arrow>
+
+                    </arrow> <category>
+
+                        <base>
+                            <up>
+                                <color code="#FBFBFB" alpha="0" />
+                            </up>
+                            <over>
+                                <color code="#FBFBFB" alpha="0.6" />
+                            </over>
+                            <down>
+                                <color code="#FBFBFB" alpha="0.3" />
+                            </down>
+                        </base>
+
+                        <symbol>
+                            <up>
+                                <color code="#FBFBFB" alpha="1" />
+                            </up>
+                            <over>
+                                <color code="#020202" alpha="1" />
+                            </over>
+                            <down>
+                                <color code="#020202" alpha="0.5" />
+                            </down>
+                        </symbol>
+
+                    </category> <display>
+
+                        <base>
+                            <up>
+                                <color code="#FBFBFB" alpha="0" />
+                            </up>
+                            <over>
+                                <color code="#FBFBFB" alpha="0.6" />
+                            </over>
+                            <down>
+                                <color code="#FBFBFB" alpha="1" />
+                            </down>
+                        </base>
+
+                        <circle>
+                            <up>
+                                <color code="#FBFBFB" alpha="1" />
+                            </up>
+                            <over>
+                                <color code="#020202" alpha="1" />
+                            </over>
+                            <down>
+                                <color code="#020202" alpha="1" />
+                            </down>
+                        </circle>
+
+                        <symbol>
+                            <up>
+                                <color code="#020202" alpha="1" />
+                            </up>
+                            <over>
+                                <color code="#FBFBFB" alpha="1" />
+                            </over>
+                            <down>
+                                <color code="#FBFBFB" alpha="1" />
+                            </down>
+                        </symbol>
+
+                    </display>
+
+                    <autoplay displayTime="10" default="on">
+
+                        <base>
+                            <up>
+                                <color code="#FBFBFB" alpha="0" />
+                            </up>
+                            <over>
+                                <color code="#FBFBFB" alpha="0.6" />
+                            </over>
+                            <down>
+                                <color code="#FBFBFB" alpha="0.6" />
+                            </down>
+                        </base>
+
+                        <animation>
+                            <up>
+                                <color code="#FBFBFB" alpha="1" />
+                            </up>
+                            <over>
+                                <color code="#020202" alpha="1" />
+                            </over>
+                            <down>
+                                <color code="#020202" alpha="1" />
+                            </down>
+                        </animation>
+
+                        <symbol>
+                            <up>
+                                <color code="#FBFBFB" alpha="1" />
+                            </up>
+                            <over>
+                                <color code="#020202" alpha="1" />
+                            </over>
+                            <down>
+                                <color code="#020202" alpha="1" />
+                            </down>
+                        </symbol>
+
+                    </autoplay>
+
+                </controls></viewer>
+
+            <thumbsPanel position="bottom" height="76">
+
+                <base>
+                    <color code="#2C2C2C" alpha="1" />
+                </base>
+
+                <thumb width="86" height="64">
+
+                    <base>
+                        <up>
+                            <color code="#FEFEFE" alpha="1" />
+                        </up>
+                        <over>
+                            <color code="#0EF44A" alpha="1" />
+                        </over>
+                        <down>
+                            <color code="#0EF44A" alpha="1" />
+                        </down>
+                        <selected>
+                            <color code="#0EF44A" alpha="1" />
+                        </selected>
+                    </base>
+
+                    <preloader>
+                        <color code="#202020" alpha="1" />
+                    </preloader>
+
+                </thumb>
+
+                <tooltip>
+
+                    <base>
+                        <color code="#FBFBFB" alpha="0.8" />
+                    </base>
+
+                    <label>
+                        <color code="#202020" alpha="1" />
+                    </label>
+
+                </tooltip>
+
+                <arrow>
+                    <up>
+                        <color code="#0EF44A" alpha="1" />
+                    </up>
+                    <over>
+                        <color code="#0EF44A" alpha="1" />
+                    </over>
+                    <down>
+                        <color code="#0EF44A" alpha="1" />
+                    </down>
+                </arrow>
+
+
+            </thumbsPanel><category_list>
+    <showOnStart>true</showOnStart>
+                <height>385</height>
+                <item>
+                    <title_size>15</title_size>
+                    <description_size>12</description_size>
+                    <title_color>FFFFFF</title_color>
+                    <description_color>FFFFFF</description_color>
+                    <background_color>606060</background_color>
+                    <color_over>1f1f1f</color_over>
+                    <width>330</width>
+                    <height>125</height>
+                    <thumb_width>89</thumb_width>
+                    <thumb_height>97</thumb_height>
+                    <thumb_border_size>4</thumb_border_size>
+                    <thumb_border_color>FFFFFF</thumb_border_color>
+                </item>
+                <scroll>
+                    <background_color>77c001</background_color>
+                    <element_color>f5f5f5</element_color>
+                    <element_icon_color>000000</element_icon_color>
+                </scroll>
+                <close>
+                    <background_color>77c001</background_color>
+                    <icon_color>f5f5f5</icon_color>
+                    <background_color_over>f5f5f5</background_color_over>
+                    <icon_color_over>77c001</icon_color_over>
+                </close>
+            </category_list> </settings><content><category><title><![CDATA[Zirl Galerie]]></title><description><![CDATA[]]></description><thumb scale="true">http://smiley-homes.at/images/dreamworkgallery/galleries/virtual.png</thumb> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/virtual.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/virtual_thumb.png</thumb><label><![CDATA[Virtual]]></label><description><![CDATA[]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/garage.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_garage.png</thumb><label><![CDATA[garage]]></label><description><![CDATA[garage]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/garage2.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_garage2.png</thumb><label><![CDATA[garage2]]></label><description><![CDATA[garage2]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/geschaeft.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_geschaeft.png</thumb><label><![CDATA[geschaeft]]></label><description><![CDATA[geschaeft]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/INNENHOF___S__DOST.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_INNENHOF___S__DOST.png</thumb><label><![CDATA[INNENHOF - SÜDOST]]></label><description><![CDATA[INNENHOF - SÜDOST]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/INNENHOF_MIT_VOGELSCHUTZVERGLASUNG.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_INNENHOF_MIT_VOGELSCHUTZVERGLASUNG.png</thumb><label><![CDATA[INNENHOF MIT VOGELSCHUTZVERGLASUNG]]></label><description><![CDATA[INNENHOF MIT VOGELSCHUTZVERGLASUNG]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/innenhof.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_innenhof.png</thumb><label><![CDATA[innenhof]]></label><description><![CDATA[innenhof]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/INNENHOF2.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_INNENHOF2.png</thumb><label><![CDATA[INNENHOF2]]></label><description><![CDATA[INNENHOF2]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/NORD_OST.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_NORD_OST.png</thumb><label><![CDATA[NORD-OST]]></label><description><![CDATA[NORD-OST]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/NORDTERRASSE.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_NORDTERRASSE.png</thumb><label><![CDATA[NORDTERRASSE]]></label><description><![CDATA[NORDTERRASSE]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/top.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_top.png</thumb><label><![CDATA[top]]></label><description><![CDATA[top]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl.png</thumb><label><![CDATA[zirl]]></label><description><![CDATA[zirl]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl2.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl2.png</thumb><label><![CDATA[zirl2]]></label><description><![CDATA[zirl2]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl3.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl3.png</thumb><label><![CDATA[zirl3]]></label><description><![CDATA[zirl3]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl4.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl4.png</thumb><label><![CDATA[zirl4]]></label><description><![CDATA[zirl4]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl6.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl6.png</thumb><label><![CDATA[zirl6]]></label><description><![CDATA[zirl6]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl7.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl7.png</thumb><label><![CDATA[zirl7]]></label><description><![CDATA[zirl7]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl21.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl21.png</thumb><label><![CDATA[zirl21]]></label><description><![CDATA[zirl21]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl22.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl22.png</thumb><label><![CDATA[zirl22]]></label><description><![CDATA[zirl22]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl23.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl23.png</thumb><label><![CDATA[zirl23]]></label><description><![CDATA[zirl23]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl25.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl25.png</thumb><label><![CDATA[zirl25]]></label><description><![CDATA[zirl25]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl28.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl28.png</thumb><label><![CDATA[zirl28]]></label><description><![CDATA[zirl28]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl29.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl29.png</thumb><label><![CDATA[zirl29]]></label><description><![CDATA[zirl29]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item> <item interactive="yes" zoom="enabled"> <main scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/zirl31.png</main> <thumb scale="yes">http://smiley-homes.at/images/dreamworkgallery/gallery/thumb_zirl31.png</thumb><label><![CDATA[zirl31]]></label><description><![CDATA[zirl31]]></description><link window="new"><![CDATA[]]></link><price><regular><![CDATA[]]></regular><updated><![CDATA[]]></updated></price></item></category></content></data>
