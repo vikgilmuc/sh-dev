@@ -319,6 +319,7 @@ language/en-GB/index.html
 language/en-GB/install.xml
 language/overrides/*
 language/index.html
+layouts/*
 libraries/cms.php
 libraries/cms/*
 libraries/joomla/*
