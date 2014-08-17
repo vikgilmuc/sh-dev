@@ -11,6 +11,10 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/template_' . $this->params->get('farbauswahl') . '.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/base3.css');
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head> 
@@ -27,8 +31,10 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/base3.css');
 jQuery(document).ready(function(){
     var hiddenDiv = document.getElementById("login");
     jQuery('#login').hover(function(){ 
-        hiddenDiv.style.display =  "block"},function(){ 
-            hiddenDiv.style.display =  "none"} );
+            hiddenDiv.style.display =  "block"},
+            //function(){ 
+           // hiddenDiv.style.display =  "none"}
+            );
     jQuery('.item-121').hover( function(){ 
         hiddenDiv.style.display =  "block"},function(){ 
             hiddenDiv.style.display =  "none"}  );
@@ -66,7 +72,7 @@ jQuery('.nav a').on('click', function(){
 </head>
 <body>
    
-    <!-- Reihe 4 -->
+ 
    
     <nav id="mainmenu" class="clearfix nav-fixed-bottom"  role="navigation"> 
         <div id="padre" class="container-fluid">
@@ -89,7 +95,7 @@ jQuery('.nav a').on('click', function(){
     <div class="container-fluid" >
  
    
-        <div> <!-- Reihe 4 -->
+        <div> 
     				 <jdoc:include type="component" style="html5" />  <!-- Hauptbereich -->
     	
         </div>
@@ -109,7 +115,7 @@ jQuery('.nav a').on('click', function(){
     	</div>   
        
     <div class="fusszeile"> <jdoc:include type="modules" name="position-7" style="kinostil" titelebene="3" /> </div> 
-    	</div>
+    	
     
     
     
