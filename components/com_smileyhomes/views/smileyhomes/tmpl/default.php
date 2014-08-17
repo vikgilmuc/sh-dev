@@ -19,7 +19,18 @@
 		<td><h3>Terrasse<br/>/QM</h3></td>
 		<td><h3><?php echo JText::_('Frei'); ?></h3></td>
 	</tr>
-	
+	<?php 
+$user = JFactory::getUser();
+$status = $user->guest;
+
+if($status == 1){
+echo("guest");
+}
+else
+{ 
+echo("registered");
+}   
+?>
 	<?php
 	foreach($this->allewohnungen as $wohnung)
 	{
@@ -28,8 +39,10 @@
 		echo '<td><p>' . $wohnung->typ . '</p></td>';
 		echo '<td>';
 		if (file_exists ('images/plaene/'.$wohnung->name.'.jpg')) {
-		echo '<p class="centriert"><a class="plan" href="images/plaene/'.$wohnung->name.'.jpg" rel="fancied">link</a>';
-		};
+		if($status == 1){echo '<p class="centriert"><a class="plan" href="images/plaene/'.$wohnung->name.'.jpg" rel="fancied">register to see</a>';}
+        else 
+        {echo '<p class="centriert"><a class="plan" href="images/plaene/'.$wohnung->name.'.jpg" rel="fancied">link</a>';
+        }};
 		echo '</p></td>';
 		echo '<td><p>' . $wohnung->ebene . '</p></td>';
 		echo '<td><p>' . $wohnung->meter . '</p></td>';

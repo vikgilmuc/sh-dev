@@ -10,8 +10,12 @@ require_once 'includes/fb_config.inc.php';
 $facebook = new RWA_Facebook($fb_config);
 // If the user is logged in, send them to the home page
 if ($facebook->is_logged_in()) {
+
     //header("Location: ./");
 	echo "loggedin";
+
+ //   header("Location: ./");
+
 exit;
 }
 ?>
