@@ -28,7 +28,7 @@ templates/kinoportal_templateboot/*
 templates/shtemplate/*
 templates/system/*
 templates/kinoportal_template/*
-templates/meet_gavern/*          
+templates/meet_gavern/*
 tmp/*
 configuration.php
 joomla.xml
