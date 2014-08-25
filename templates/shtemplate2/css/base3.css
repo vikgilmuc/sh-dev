@@ -145,6 +145,7 @@ top:100%;
 
 /*------------projekt Zirl---------------*/
 
+
 #projekt_zirl{background: transparent}
 #projekt_zirl img {
 	width:100%}
@@ -178,27 +179,7 @@ top:100%;
 }
 
 #zirlbgiphone{display: none}
-
-/*-----------galerie--------------*/
-
-#galerie {
-	
-
-	
-}
-
 /*-------wohnungen ---------------*/
-
-#wohnungen-section {}
-
-.bgboxwohnungen {
-	background:  url('../images/wohnbg.png') no-repeat;
-	background-size: cover;
-	background-position:center center ;
-  background-attachment:fixed;
-  height: 1000px;
-
-}
 
 tbody {background: #fff}
 
@@ -208,18 +189,23 @@ tbody {background: #fff}
 
 #wohnungen h3 {}
 
+.bgboxwohnungen {
+	background:  url('../images/wohnbg.png');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position:center center ;
+  background-attachment:fixed;
+  height: 1000px;
 
-.table-striped>tbody>tr:nth-child(odd)>td, 
-.table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: #aaa;
- }
-
+}
 #wohnungenbgiphone {display: none}
+
 /*--------kontakt ---------------*/
 
 
 
 #kontakt  img {width:100%}
+
 
 
 
@@ -262,12 +248,57 @@ ul.socials li  {
 .navbar-brand {
 	height:0px}
 
-#login {
+#login {	
+	height:60px;
+	width: 181px;
 	position: fixed; 
-	bottom: 50px; 
-	right: 100px; 
+	top: 0px; 
+	left: 0px; 
 	background-color: white ; 
-	display: block}
+	overflow: hidden;
+	}
+#login:hover{
+height:auto;
+width: 200px}
+
+#login-form p {margin-bottom: 0px}
+
+
+	
+#padre2{
+	position: fixed; 
+	top: 0px; 
+	left: 0px; 
+	
+}
+
+
+#button-login{
+	
+	top: 0px; 
+	left: 10px; 
+}
+.nodisplay {display: none}
+#login-img{
+	width:50px;
+	height:50px;
+}
+
+#demo{
+	
+	position: relative;
+	float:left;
+	top: 0px; 
+	left: 0px; 
+	background-color: white ; 
+	overflow: hidden;
+	}
+
+
+
+#login h3 {
+	text-align:center;
+}
 
 .form-horizontal .control-label {
   text-align: left;}
@@ -286,6 +317,9 @@ ul.socials li  {
 /*-----------------HANDY-----*/
 @media only screen and (max-width: 37.5em) and  (-webkit-min-device-pixel-ratio: 1) { 
 	#sh {width:100px;height:100px}
+	
+	#svg18832{width:100%}
+	
 	
 	#logo-img {
 		width:25%; 
@@ -335,16 +369,18 @@ ul.socials li  {
 	
     }
 
+	
 	.bgboxwohnungen {
-	background:  url('../images/wohnbg.png') no-repeat;
+	background:  url('../images/wohnbg.png');
+	background-repeat: no-repeat; 
 	background-size: cover;
 	background-position:center center ;
- background-repeat: no-repeat;
- background-attachment: fixed; 
-  height: 1500px;
+  background-attachment:fixed;
+  height: 1000px;
 
 }
-
+	
+	
 	ul.socials li  {
     display: block;
     margin: 0 0.4em 0 0;
@@ -369,13 +405,53 @@ ul.socials li  {
 	.go {background-position: -66px -33px;}
 	.go:hover {background-position: -66px 0px;}
 
-			
+	#login {
+	display:none ;
+	height:auto;
+	width: 150px;
+	position: fixed; 
+	top: 0px; 
+	left: 0px; 
+	background-color: white ; 
+	overflow: hidden;
+	}
+
+
+	
+#padre2{
+	position: fixed; 
+	top: 0px; 
+	left: 0px; 
+	
 }
 
+
+#button-login{
+	display:block;
+	top: 0px; 
+	left: 10px; 
+}
+
+#login-img{
+	width:50px;
+	height:50px;
+}
+
+#demo{
+	
+	position: relative;
+	float:left;
+	top: 0px; 
+	left: 0px; 
+	background-color: white ; 
+	overflow: hidden;
+	}
+
+		
+}
 /*----------------------------Iphone to solve problem wih background-attachment--------------*/
 
 @media only screen and (max-width: 37.5em) and  (-webkit-min-device-pixel-ratio: 2) { 
-
 #projekt_zirl h1{ color: #111111}
 
 .bgbox {
@@ -390,15 +466,21 @@ box-sizing: content-box;
 }
 
 #zirlbgiphone{display: block}
-
-
-.bgboxwohnungen {
+	.bgboxwohnungen {
 	background:  transparent;
-	
-height: auto;
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position:center center ;
+  background-attachment:scroll;
+  height: auto;
+
+}
+#wohnungenbgiphone{display: block}
 }
 
-#wohnungenbgiphone{display: block}
+
+
+
 }
 		
 /*------------------------Ipad----------------*/	
@@ -420,15 +502,7 @@ ul.socials li  {
 	background-attachment:fixed;
 	height: 1400px;
 }
-	
-	.bgboxwohnungen {
-	background:  url('../images/wohnbg.png') no-repeat;
-	background-size: cover;
-	background-position:center center ;
-  background-attachment:fixed;
-  height: 1000px;
 
-}
 
 	
 #logo-img {width:25%; margin-right:auto; margin-left:auto; }
@@ -461,16 +535,16 @@ ul.socials li  {
 	
 }
 
-	
+
 	.bgboxwohnungen {
-	background:  url('../images/wohnbg.png') no-repeat;
+	background:  transparent;
+	background-repeat: no-repeat; 
 	background-size: cover;
 	background-position:center center ;
-  
-  height: 1000px;
+  background-attachment:scroll;
+  height: auto;}
 
-}
-
+	
 #logo-img {width:25%; margin-right:auto; margin-left:auto; }
 
 #projekt_zirl h2{ font-family: copperplate_gothic_lightRg; font-size: 160%; color: #527ea1;font-weight: 900; text-shadow: 1px 1px #000000; text-align: left;  background-color: rgba(255,255,255,0.4)}
@@ -480,9 +554,10 @@ ul.socials li  {
 
 
 
+
 /*---------normal screen  ---------------*/
 
-@media only screen and (min-width: 61.18em) and (max-width:  74.93em) { 
+@media only screen and (min-width: 64em) and (max-width:  74.93em) { 
 
 	#logo-img {width:25%; margin-right:auto; margin-left:auto; }
 	

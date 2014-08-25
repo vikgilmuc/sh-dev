@@ -52,6 +52,8 @@ jQuery('.plan').attr("rel","fancied").fancybox({
   } //  afterShow
  }); // fancybox
 	
+
+
 	
 });
 

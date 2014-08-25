@@ -11,10 +11,6 @@ $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/templ
 $this->addStyleSheet(JURI::base() . 'templates/' . $this->template . '/css/template_' . $this->params->get('farbauswahl') . '.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/base3.css');
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head> 
@@ -28,16 +24,16 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/base3.css');
   <link rel="stylesheet" type="text/css" href="templates/shtemplate2/css/ie.css">
 <![endif]-->
 	<script>
-jQuery(document).ready(function(){
-    var hiddenDiv = document.getElementById("login");
-    jQuery('#login').hover(function(){ 
-            hiddenDiv.style.display =  "block"},
+//jQuery(document).ready(function(){
+  //  var hiddenDiv = document.getElementById("login");
+  //  jQuery('#login').hover(function(){ 
+     //       hiddenDiv.style.display =  "block"});
             //function(){ 
            // hiddenDiv.style.display =  "none"}
-            );
-    jQuery('.item-121').hover( function(){ 
-        hiddenDiv.style.display =  "block"},function(){ 
-            hiddenDiv.style.display =  "none"}  );
+            ;
+   // jQuery('.item-121').hover( function(){ 
+     //   hiddenDiv.style.display =  "block"},function(){ 
+    //        hiddenDiv.style.display =  "none"}  );
       
 jQuery('.nav a').on('click', function(){
     jQuery(".navbar-toggle").click();
@@ -45,13 +41,11 @@ jQuery('.nav a').on('click', function(){
 
 });
 
- 
- jQuery('a[rel="imagelightbox-sigplus_7d38a507ad19129a1c10b0638fa09758"]').imageLightbox(
+ jQuery('a[rel="imagelightbox-sigplus_9370d1d0beb1d93c2d1d37a5294aa4a7"]').imageLightbox(
 {
     
 });
- 
- 
+
       
       });
         
@@ -72,7 +66,7 @@ jQuery('.nav a').on('click', function(){
 </head>
 <body>
    
- 
+    <!-- Reihe 4 -->
    
     <nav id="mainmenu" class="clearfix nav-fixed-bottom"  role="navigation"> 
         <div id="padre" class="container-fluid">
@@ -95,13 +89,58 @@ jQuery('.nav a').on('click', function(){
     <div class="container-fluid" >
  
    
-        <div> 
+        <div> <!-- Reihe 4 -->
     				 <jdoc:include type="component" style="html5" />  <!-- Hauptbereich -->
     	
         </div>
+		
+		</div>
         
     <aside role="complementary">
-        <div class="navbar-fixed-top  col-xs-offset-9 col-xs-3">
+	
+
+	   
+		<div id="padre2" class="container-fluid col-xs-offset-1 col-xs-3">
+            
+			<button id="button-login" type="button" class="btn 
+			
+								<?php 
+					$user = JFactory::getUser();
+					$status = $user->guest;
+
+					if($status == 1){
+
+					}
+					else
+					{ 
+					echo("nodisplay");
+					}   
+					?>
+
+" style="background-color: white" data-toggle="collapse" data-target="#demo"><a href="#" class="svg">
+			  <img id="login-img" style="display:block" src="./images/login.png" /></a>
+			</button>
+
+					<div id="demo" class="collapse 
+									<?php 
+						$user = JFactory::getUser();
+						$status = $user->guest;
+
+						if($status == 1){
+
+						}
+						else
+						{ 
+						echo("in");
+						}   
+						?>
+			"><jdoc:include type="modules" name="position-6" style="kinostil" titelebene="3" /> </div>
+                
+              
+		</div>
+	
+	
+        <div class="navbar-fixed-top  col-xs-offset-10 col-xs-3">
         <div class="btn-group panel " >
                     <ul class="socials panel-body">
                         <li><a href="http://www.facebook.com/pages/Smiley-Homes-Gmbh/495349477245628" target="_blank"><i class="sprite fb">Finde uns auf Facebook</i></a></li>
@@ -111,11 +150,10 @@ jQuery('.nav a').on('click', function(){
                                  </div>           </div>
     </aside>
    
-    <div id="login"> <jdoc:include type="modules" name="position-6" style="kinostil" titelebene="3" /> </div> 
-    	</div>   
+    
        
     <div class="fusszeile"> <jdoc:include type="modules" name="position-7" style="kinostil" titelebene="3" /> </div> 
-    	
+    	</div>
     
     
     
@@ -124,7 +162,7 @@ jQuery('.nav a').on('click', function(){
     <?php $doc->addScript('templates/'.$this->template.'/js/jquery.nav.js'); ?>
     <?php $doc->addScript('templates/'.$this->template.'/js/jquery.scrollTo.js'); ?>
     <?php $doc->addScript('templates/'.$this->template.'/fancybox/jquery.fancybox.js'); ?>
-    <?php $doc->addScript('plugins/content/sigplus/engines/imagelightbox/js/imagelightbox.js'); ?>
+	<?php $doc->addScript('plugins/content/sigplus/engines/imagelightbox/js/imagelightbox.js'); ?>
     <?php $doc->addScript('templates/'.$this->template.'/js/sued3s.js'); ?>
     
         
