@@ -116,8 +116,11 @@ jQuery('.nav a').on('click', function(){
 					echo("nodisplay");
 					}   
 					?>
+ 
+					
+" style="background-color: white" data-toggle="collapse" data-target="#demo">
 
-" style="background-color: white" data-toggle="collapse" data-target="#demo"><a href="#" class="svg">
+<a href="#" class="svg">
 			  <img id="login-img" style="display:block" src="./images/login.png" /></a>
 			</button>
 
