@@ -23,7 +23,7 @@ jQuery('#bs-example-navbar-collapse-1').onePageNav({
 })
 
 
-//jQuery('[title="impressum"]').unbind('click');
+jQuery('[title="impressum"]').unbind('click');
 	
 jQuery("a.plan").fancybox();
 
