@@ -24,16 +24,9 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/base3.css');
   <link rel="stylesheet" type="text/css" href="templates/shtemplate2/css/ie.css">
 <![endif]-->
 	<script>
-//jQuery(document).ready(function(){
-  //  var hiddenDiv = document.getElementById("login");
-  //  jQuery('#login').hover(function(){ 
-     //       hiddenDiv.style.display =  "block"});
-            //function(){ 
-           // hiddenDiv.style.display =  "none"}
-            ;
-   // jQuery('.item-121').hover( function(){ 
-     //   hiddenDiv.style.display =  "block"},function(){ 
-    //        hiddenDiv.style.display =  "none"}  );
+	
+	
+
       
 jQuery('.nav a').on('click', function(){
     jQuery(".navbar-toggle").click();
@@ -42,13 +35,9 @@ jQuery('.nav a').on('click', function(){
 });
 
  jQuery('a[rel="imagelightbox-sigplus_9370d1d0beb1d93c2d1d37a5294aa4a7"]').imageLightbox(
-{
+{ });
+     
     
-});
-
-      
-      });
-        
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -165,7 +154,46 @@ jQuery('.nav a').on('click', function(){
 	<?php $doc->addScript('plugins/content/sigplus/engines/imagelightbox/js/imagelightbox.js'); ?>
     <?php $doc->addScript('templates/'.$this->template.'/js/sued3s.js'); ?>
     
+    <script>
+        var myApp;
+             myApp = myApp || (function () {
+             var pleaseWaitDiv = jQuery('<div class="modal fade" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h1>Processing...</h1></div><div class="modal-body"><div class="progress progress-striped active"><div class="progress-bar progress-bar-striped active" style="width: 100%;"></div></div></div></div></div></div>');
+            return {
+                showPleaseWait: function() {
+                    pleaseWaitDiv.modal('show');
+                },
+                hidePleaseWait: function () {
+                    pleaseWaitDiv.modal('hide');
+                },
         
+            };
+            })();
+            
+        jQuery(document).ready(function(){
+            
+            
+            jQuery("#contact").submit(function(e) {
+            
+         var url1= "/modules/mod_shformmodule/mod_shformmodule.php"; // the script where you handle the form input.
+
+        jQuery.ajax({
+           type: "POST",
+           url: url1,
+           data: jQuery("#contact").serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+               myApp.hidePleaseWait();
+               jQuery('#contact').html(data) // show response from the php script.
+           }
+         });
+         
+            myApp.showPleaseWait();
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+  
+ 
+});
+    </script>    
 
 </body>
 </html>
