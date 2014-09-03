@@ -30,24 +30,20 @@ if (!isset($_POST["from"])) {
   <?php 
 } else {    // the user has submitted the form
   // Check if the "from" input field is filled out
-  if (isset($_POST["from"])) {?>
-      <h2>Thanks</h2><?php
-    //$from = $_POST["from"]; // sender
-   // $subject = $_POST["subject"];
-   // $message = $_POST["message"];
-    // message lines should not exceed 70 characters (PHP rule), so wrap it
-   // $message = wordwrap($message, 70);
-    // send mail
+  if (isset($_POST["from"])) {
+  
    // mail("victor@victorgil.name",$subject,$message,"From: $from\n");
-   
-echo $_POST['from'];
-echo $_POST['subject'];
-echo $_POST['message'];
+ echo ' <div class="alert alert-success" role="alert"><h3>Ihre Meldung:</h3><br>' ;
+echo "from:".$_POST['from'];
+echo "<br>";  
+echo "subject:".$_POST['subject'];
+echo "<br>";  
+echo "message:".$_POST['message'];
 
- 
+ echo "<br>"; 
   mail("victor@victorgil.name",$_POST['subject'], $_POST['from']+$_POST['message'] );
    
-    echo "Thank you for sending us feedback";
+    echo " wurde gesendet. Danke</div>";
   }
 }
 ?>
