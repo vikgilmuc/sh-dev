@@ -153,17 +153,20 @@ jQuery('.nav a').on('click', function(){
     <?php $doc->addScript('templates/'.$this->template.'/js/transition.js'); ?>
     <?php $doc->addScript('templates/'.$this->template.'/js/jquery.nav.js'); ?>
     <?php $doc->addScript('templates/'.$this->template.'/js/jquery.scrollTo.js'); ?>
-    <?php $doc->addScript('templates/'.$this->template.'/fancybox/jquery.fancybox.js'); ?>
+	<?php $doc->addScript('templates/'.$this->template.'/fancybox/jquery.fancybox.js'); ?>
+    <?php $doc->addScript('templates/'.$this->template.'/js/bootstrap.js'); ?>
 	<?php $doc->addScript('plugins/content/sigplus/engines/imagelightbox/js/imagelightbox.js'); ?>
     <?php $doc->addScript('templates/'.$this->template.'/js/sued3s.js'); ?>
     
     <script>
         
+            
         jQuery(document).ready(function(){
-           var myApp;
+          var myApp;
              myApp = myApp || (function () {
-             var pleaseWaitDiv = jQuery('<div class="modal fade" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h1>Processing...</h1></div><div class="modal-body"><div class="progress progress-striped active"><div class="progress-bar progress-bar-striped active" style="width: 100%;"></div></div></div></div></div></div>');
-            return {
+             var pleaseWaitDiv = jQuery('<div class="modal" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h1>Processing...</h1></div><div class="modal-body"><div class="progress progress-striped active"><div class="progress-bar progress-bar-striped active" style="width: 100%;"></div></div></div></div></div></div>');
+           
+			return {
                 showPleaseWait: function() {
                     pleaseWaitDiv.modal('show');
                 },
@@ -172,8 +175,7 @@ jQuery('.nav a').on('click', function(){
                 },
         
             };
-            })();
-             
+            })();  
             
             jQuery("#contact").submit(function(e) {
             
@@ -192,10 +194,10 @@ jQuery('.nav a').on('click', function(){
          
             myApp.showPleaseWait();
         e.preventDefault(); // avoid to execute the actual submit of the form.
-    });
+		});
   
  
-});
+	});
     </script>    
 
 </body>

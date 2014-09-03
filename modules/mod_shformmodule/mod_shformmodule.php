@@ -42,7 +42,7 @@ echo "message:".$_POST['message'];
 
  echo "<br>"; 
   mail("victor@victorgil.name",$_POST['subject'], $_POST['from']+$_POST['message'] );
-   
+    
     echo " wurde gesendet. Danke</div>";
   }
 }
