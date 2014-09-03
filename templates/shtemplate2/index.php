@@ -148,7 +148,7 @@ jQuery('.nav a').on('click', function(){
     	</div>
     
     
-    
+    <?php $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.min.css');?>
     <?php $doc->addScript('templates/'.$this->template.'/js/collapse.js'); ?>
     <?php $doc->addScript('templates/'.$this->template.'/js/transition.js'); ?>
     <?php $doc->addScript('templates/'.$this->template.'/js/jquery.nav.js'); ?>
@@ -179,7 +179,7 @@ jQuery('.nav a').on('click', function(){
             
             jQuery("#contact").submit(function(e) {
             
-         var url1= "/modules/mod_shformmodule/mod_shformmodule.php"; // the script where you handle the form input.
+         var url1= "index.php?option=com_ajax&module=shformmodule&format=debug"; // the script where you handle the form input.
 
         jQuery.ajax({
            type: "POST",
